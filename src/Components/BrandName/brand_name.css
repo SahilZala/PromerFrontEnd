@@ -1,0 +1,19 @@
+#brand-name{
+    color: var(--brand-color);
+    font-family: var(--brand-font);
+    font-size: 30px;
+    font-weight: 700;
+    flex: 1;
+    justify-content: center;
+    display: flex;
+}
+
+@media (max-width: 800px) {
+    #brand-name{
+        color: var(--brand-color);
+        font-family: var(--brand-font);
+        font-size: 20px;
+        font-weight: 700;
+        flex: 0;
+    }
+}

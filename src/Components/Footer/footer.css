@@ -1,0 +1,37 @@
+.footer-section{
+    background-color: #F1F1F1;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section .contact-section{
+    flex: 1;
+}
+
+.footer-section .contact-section h3{
+    font-family: var(--main-font);
+    font-weight: 450;
+    color: var(--main-color-black);  
+}
+
+.footer-section .contact-section p{
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    font-family: var(--main-font);
+    font-weight: 400;
+}
+
+
+
+.footer-section .links-section{
+    flex: 2;
+}
+
+.footer-section .ask-question-section{
+    flex: 3;
+}

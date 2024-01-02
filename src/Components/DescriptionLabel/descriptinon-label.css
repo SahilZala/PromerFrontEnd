@@ -1,0 +1,24 @@
+#description-lable-body{
+    padding: 1vmin;
+    background-color: #ffdb81;
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--main-color-black);
+    flex-wrap: wrap;
+}
+
+#description-lable-body h4{
+    padding: 2vmin;
+    font-family: var(--main-font);
+    margin: 0px;
+    align-items: center;
+    display: flex;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+@media (max-width: 800px) {
+    #description-lable-body h4{
+        font-size: 15px;
+    }       
+}
