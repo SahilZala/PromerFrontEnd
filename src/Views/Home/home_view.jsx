@@ -10,6 +10,8 @@ import DescriptionLabel from "../../Components/DescriptionLabel/description-labe
 // import Footer from "../../Components/Footer/footer";
 export default class HomeView extends React.Component
 {
+    
+
     render(){
         return(
             <section id="main">

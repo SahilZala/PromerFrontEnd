@@ -5,7 +5,7 @@ export default function NavItem(param){
     return(<li  className="nav-item">
         <h3>{param.name}
             <ul className="submenu">
-                {param.subItems.map((val,index) => <li><h5>{val}</h5></li>)}
+                {param.subItems.map((val,index) => <li><h5>{val.item}</h5></li>)}
             </ul>
         </h3>
         {/* <ul className="submenu">
