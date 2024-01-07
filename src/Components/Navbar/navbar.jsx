@@ -13,66 +13,78 @@ export default class Navbar extends React.Component {
         super();
 
         this.myViews = {
-            1: <>SOCKS</>,
-            2: <>T-SHIRTS</>,
-            3: <>SHORTS</>,
-            4: <>SCARFS</>,
-            5: <>NEW ARRIVALS</>,
-            6: <>BEST SELLER</>,
-            11: <>Loffer Socks</>,
-            12: <>Ankle Socks</>,
-            21: <>Long sleeves tshirts</>,
-            22: <>Short sleeves tshirts</>,
+            1: <>HOME</>,
+            2: <>PRODUCTS</>,
+            3: <>NEW ARRIVAL</>,
+            4: <>BEST SELLER</>,
+            5: <>ABOUT US</>,
+            6: <>CONTACT DETAILS</>,
+            21: <>SOCKS</>,
+            22: <>SHORTS</>,
+            23: <>T-SHIRTS</>,
+            24: <>SCARFS</>,
+            25: <>HOODIES</>,
+            26: <>SWEAT SHIRTS</>
         }
 
         this.state = {
             itemData: [{
                 id: 1,
-                item: "SOCKS",
+                item: "HOME",
                 icon: <></>,
                 subItem: [
-                    {
-                        id: 11,
-                        item: "Loffer Socks"
-                    },
-                    {
-                        id: 12,
-                        item: "Ankle Socks",
-                    }
+
                 ],
             }, 
             {
                 id: 2,
-                item: "T-SHIRTS",
+                item: "PRODUCTS",
                 icon: <></>,
-                subItem: [{
+                subItem: [ {
                     id: 21,
-                    item: "Full sleeves t-shirts"
-                },{
+                    item: "SOCKS"
+                },
+                {
                     id: 22,
-                    item: "Half sleeves t-shirts"
+                    item: "SHORTS",
+                },
+                {
+                    id: 23,
+                    item: "T-SHIRTS",
+                },
+                {
+                    id: 24,
+                    item: "SCARFS",
+                },
+                {
+                    id: 25,
+                    item: "HOODIES",
+                },
+                {
+                    id: 26,
+                    item: "SWEAT SHIRTS",
                 }]
             },
             {
                 id: 3,
-                item: "SHORTS",
+                item: "NEW ARRIVALS",
                 icon: <></>,
                 subItem: []
             },{
                 id: 4,
-                item: "SCARFS",
+                item: "BEST SELLER",
                 icon: <></>,
                 subItem: []
             },
             {
                 id: 5,
-                item: "NEW ARRIVALS",
+                item: "ABOUT US",
                 icon: <></>,
                 subItem: []
             },
             {
                 id: 6,
-                item: "BEST SELLER",
+                item: "CONTACT DETAILS",
                 icon: <></>,
                 subItem: []
             }
