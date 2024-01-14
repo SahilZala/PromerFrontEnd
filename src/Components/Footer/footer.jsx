@@ -1,6 +1,6 @@
 import React from "react";
 import './footer.css';
-import { Facebook, Instagram, LocationOn, Twitter, WhatsApp } from "@mui/icons-material";
+import { Facebook, Instagram, Twitter, WhatsApp } from "@mui/icons-material";
 
 export default class Footer extends React.Component{
     render(){
