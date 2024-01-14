@@ -9,7 +9,7 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import Sidebar from "../Sidebar/sidebar";
 export default class Navbar extends React.Component {
 
-    constructor() {
+    constructor(props) {
         super();
 
         this.myViews = {
@@ -95,20 +95,40 @@ export default class Navbar extends React.Component {
         }
     }
 
+    componentDidMount(){
+        console.log("component did mount");
+        this.props.gsap.to(["#nav-pop-icon-body","#search-icon","#brand-name","#profile-icon","#cart-icon"],{
+            top: "0px",
+            easy: this.props.effect,
+            duration: 1,
+            stagger: .3
+        })
+
+        this.props.gsap.to("#section2",{
+            opacity: 100,
+            ease: this.props.effect,
+            duration: 3
+            
+        });
+        this.setState();
+
+    }
+
     render() {
+        
         console.log("saa");
         return (<div id="nav">
             <section id="section1">
-                <span id="nav-pop-icon">
-                    <AppsIcon onClick={() => {
-                        this.openDrawer();
-                    }}/>
-                    
-                </span>
+                
                 <span className="nav-bar-extra1">
                     <SearchOutlinedIcon id="search-icon" />
+                    <AppsIcon id="nav-pop-icon-body" onClick={() => {
+                        this.openDrawer();
+                    }}/>
                 </span>
-                <BrandName />
+                <span className="nav-bar-brandname">
+                    <BrandName id="brand-name"/>
+                </span>
                 <span className="nav-bar-extra2">
                     <Person2OutlinedIcon id="profile-icon" />
                     <ShoppingCartOutlinedIcon id="cart-icon" />
@@ -119,7 +139,7 @@ export default class Navbar extends React.Component {
 
                 {
                     this.state.itemData.map((data,index) => {
-                        return <NavItem name={data.item} subItems={data.subItem} />
+                        return <NavItem timeline={this.props.timeline} effect={this.props.effect} name={data.item} subItems={data.subItem} />
                     })
                 }
                 {/* <NavItem name="SOCKS" subItems={this.state.socks} />

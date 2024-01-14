@@ -4,19 +4,27 @@ import Navbar from "../../Components/Navbar/navbar";
 import CustomeCarousel from "../../Components/Carousel/custome_carousel";
 import OurStory from "../../Components/OurStory/our-story";
 // import ProductCard from "../../Components/ProductCard/product-card";
-import TopPicsProducts from "../../Components/TopPicsProduct/top-pics-products";
-import CoreDetails from "../../Components/CoreDetails/core-details";
+// import TopPicsProducts from "../../Components/TopPicsProduct/top-pics-products";
+// import CoreDetails from "../../Components/CoreDetails/core-details";
 import DescriptionLabel from "../../Components/DescriptionLabel/description-label";
+import gsap from "gsap/gsap-core";
+import { Expo } from "gsap";
+import MarqueeBanner from "../../Components/MarqueeBanner/marquee_banner";
 // import Footer from "../../Components/Footer/footer";
 export default class HomeView extends React.Component
 {
-    
+    constructor(){
+        super();
+
+        this.gsap = gsap;
+        this.effect = Expo.easeInOut;
+    }
 
     render(){
         return(
             <section id="main">
                     <section id="nav-section">
-                    <Navbar/>
+                    <Navbar gsap={this.gsap} effect={this.effect}/>
                 </section>
 
                 <section id="crousal-section">
@@ -30,11 +38,17 @@ export default class HomeView extends React.Component
                 <br/>
                 <br/>
                 <section id="description-lable"> 
-                    <DescriptionLabel/>
+                    <DescriptionLabel gsap={this.gsap} effect={this.effect}/>
                 </section>
                 <br/>
                 <br/>
-                <section id="top-pics-section">
+                <section id="marquee-banner"> 
+                    <MarqueeBanner gsap={this.gsap} effect={this.effect}/>
+                </section>
+                <br/>
+                <br/>
+                
+                {/* <section id="top-pics-section">
                     <TopPicsProducts/>
                 </section>
                 <br/>
@@ -43,7 +57,7 @@ export default class HomeView extends React.Component
                     <CoreDetails/>
                 </section>  
                 <br/>
-                <br/>
+                <br/> */}
 
                 <section id="footer-section"> 
                     {/* <Footer/> */}
