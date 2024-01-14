@@ -12,13 +12,14 @@ import { Expo } from "gsap";
 import MarqueeBanner from "../../Components/MarqueeBanner/marquee_banner";
 import { CSSRulePlugin } from "gsap/CSSRulePlugin";
 // import Footer from "../../Components/Footer/footer";
+const C = CSSPlugin;
 export default class HomeView extends React.Component
 {
     constructor(){
         super();
 
         this.gsap = gsap;
-        gsap.registerPlugin(CSSRulePlugin);
+        this.gsap.registerPlugin(CSSRulePlugin);
         this.effect = Expo.easeInOut;
     }
 
