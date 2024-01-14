@@ -3,14 +3,13 @@ import './home_view.css';
 import Navbar from "../../Components/Navbar/navbar";
 import CustomeCarousel from "../../Components/Carousel/custome_carousel";
 import OurStory from "../../Components/OurStory/our-story";
-// import ProductCard from "../../Components/ProductCard/product-card";
-// import TopPicsProducts from "../../Components/TopPicsProduct/top-pics-products";
-// import CoreDetails from "../../Components/CoreDetails/core-details";
 import DescriptionLabel from "../../Components/DescriptionLabel/description-label";
 import gsap from "gsap/gsap-core";
 import { Expo } from "gsap";
 import MarqueeBanner from "../../Components/MarqueeBanner/marquee_banner";
 import { CSSPlugin } from "gsap/CSSPlugin";
+import CoreDetails from "../../Components/CoreDetails/core-details";
+import Footer from "../../Components/Footer/footer";
 // import Footer from "../../Components/Footer/footer";
 // const C = CSSPlugin;
 export default class HomeView extends React.Component
@@ -55,15 +54,15 @@ export default class HomeView extends React.Component
                     <TopPicsProducts/>
                 </section>
                 <br/>
-                <br/>
+                <br/> */}
                 <section id="core-details-section">
                     <CoreDetails/>
                 </section>  
                 <br/>
-                <br/> */}
+                <br/>
 
                 <section id="footer-section"> 
-                    {/* <Footer/> */}
+                    <Footer/>
                 </section>
             </section>
         );

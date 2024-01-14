@@ -1,18 +1,37 @@
 import React from "react";
 import './footer.css';
 import { Facebook, Instagram, LocationOn, Twitter, WhatsApp } from "@mui/icons-material";
+
 export default class Footer extends React.Component{
     render(){
-        return <section className="footer-section">
-            <section className="contact-section">
-                <h3>Contact Us</h3>
-                <p><LocationOn style={{fontSize: '20px',padding: '5px',color: 'var(--main-color-black)'}}/> Address in details should be here.</p>
-                <div style={{width: '100% ', display: 'flex', justifyContent: 'space-between'}}><Facebook className="social-icon"/><Instagram/><WhatsApp/><Twitter/></div>
-                <br/><br/>
-            </section>
-            <section className="links-section"></section>
-            <section className="ask-question-section"></section>
-            
-        </section>;
+        return   <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">contact us</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our products</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        
+                    </ul>
+                </div>
+                
+               
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><Facebook/></a>
+                        <a href="#"><Instagram/></a>
+                        <a href="#"><Twitter/></a>
+                        <a href="#"><WhatsApp/></a>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+   </footer>
     }
 }
