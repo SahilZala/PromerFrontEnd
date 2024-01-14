@@ -60,8 +60,7 @@ ul{
 .footer-col .social-links{
     display: flex;
 }
-.footer-col .social-links a{
-    
+.footer-col .social-links a{    
     justify-content: center;
     align-items: center;
     flex-direction: column;

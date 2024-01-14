@@ -10,10 +10,10 @@ export default class Footer extends React.Component{
                 <div class="footer-col">
                     <h4>company</h4>
                     <ul>
-                        <li><a href="#">contact us</a></li>
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">our products</a></li>
-                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="https://www.instagram.com/hookerstore.in/">contact us</a></li>
+                        <li><a href="https://www.instagram.com/hookerstore.in/">about us</a></li>
+                        <li><a href="https://www.instagram.com/hookerstore.in/">our products</a></li>
+                        <li><a href="https://www.instagram.com/hookerstore.in/">privacy policy</a></li>
                         
                     </ul>
                 </div>
@@ -22,10 +22,10 @@ export default class Footer extends React.Component{
                 <div class="footer-col">
                     <h4>follow us</h4>
                     <div class="social-links">
-                        <a href="#"><Facebook/></a>
-                        <a href="#"><Instagram/></a>
-                        <a href="#"><Twitter/></a>
-                        <a href="#"><WhatsApp/></a>
+                        <a href="https://www.instagram.com/hookerstore.in/"><Facebook/></a>
+                        <a href="https://www.instagram.com/hookerstore.in/"><Instagram/></a>
+                        <a href="https://www.instagram.com/hookerstore.in/"><Twitter/></a>
+                        <a href="https://www.instagram.com/hookerstore.in/"><WhatsApp/></a>
                     </div>
                 </div>
 
