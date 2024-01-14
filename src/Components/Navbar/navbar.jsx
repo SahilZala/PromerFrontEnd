@@ -9,6 +9,7 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import Sidebar from "../Sidebar/sidebar";
 export default class Navbar extends React.Component {
 
+    
     constructor(props) {
         super();
 
@@ -93,11 +94,13 @@ export default class Navbar extends React.Component {
             isOpen: false,
             visibility: "hidden"
         }
+
+        this.appIconAnim = React.createRef(null);
     }
 
     componentDidMount(){
         console.log("component did mount");
-        this.props.gsap.to(["#nav-pop-icon-body","#search-icon","#brand-name","#profile-icon","#cart-icon"],{
+        this.props.gsap.to([this.appIconAnim.current,"#search-icon","#brand-name","#profile-icon","#cart-icon"],{
             top: "0px",
             easy: this.props.effect,
             duration: 1,
@@ -122,7 +125,7 @@ export default class Navbar extends React.Component {
                 
                 <span className="nav-bar-extra1">
                     <SearchOutlinedIcon id="search-icon" />
-                    <AppsIcon id="nav-pop-icon-body" onClick={() => {
+                    <AppsIcon ref={this.appIconAnim} id="nav-pop-icon-body" onClick={() => {
                         this.openDrawer();
                     }}/>
                 </span>
