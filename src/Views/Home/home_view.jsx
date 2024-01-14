@@ -10,7 +10,7 @@ import DescriptionLabel from "../../Components/DescriptionLabel/description-labe
 import gsap from "gsap/gsap-core";
 import { Expo } from "gsap";
 import MarqueeBanner from "../../Components/MarqueeBanner/marquee_banner";
-import { CSSRulePlugin } from "gsap/CSSRulePlugin";
+import { CSSPlugin } from "gsap/CSSPlugin";
 // import Footer from "../../Components/Footer/footer";
 const C = CSSPlugin;
 export default class HomeView extends React.Component
@@ -19,7 +19,7 @@ export default class HomeView extends React.Component
         super();
 
         this.gsap = gsap;
-        this.gsap.registerPlugin(CSSRulePlugin);
+        this.gsap.registerPlugin(CSSPlugin);
         this.effect = Expo.easeInOut;
     }
 
