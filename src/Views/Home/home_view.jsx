@@ -12,7 +12,7 @@ import { Expo } from "gsap";
 import MarqueeBanner from "../../Components/MarqueeBanner/marquee_banner";
 import { CSSPlugin } from "gsap/CSSPlugin";
 // import Footer from "../../Components/Footer/footer";
-const C = CSSPlugin;
+// const C = CSSPlugin;
 export default class HomeView extends React.Component
 {
     constructor(){
