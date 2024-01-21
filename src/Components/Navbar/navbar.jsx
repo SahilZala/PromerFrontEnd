@@ -3,16 +3,17 @@ import NavItem from "../NavItems/nav_item";
 import './navbar.css';
 import React from "react";
 import AppsIcon from '@mui/icons-material/Apps';
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+// import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+// import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
+// import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import Sidebar from "../Sidebar/sidebar";
+
 export default class Navbar extends React.Component {
 
     
     constructor(props) {
         super();
-
+        
         this.myViews = {
             1: <>HOME</>,
             2: <>PRODUCTS</>,
@@ -99,7 +100,6 @@ export default class Navbar extends React.Component {
     }
 
     componentDidMount(){
-        console.log("component did mount");
         this.props.gsap.to([this.appIconAnim.current,"#search-icon","#brand-name","#profile-icon","#cart-icon"],{
             top: "0px",
             easy: this.props.effect,
@@ -119,12 +119,11 @@ export default class Navbar extends React.Component {
 
     render() {
         
-        console.log("saa");
         return (<div id="nav">
             <section id="section1">
                 
                 <span className="nav-bar-extra1">
-                    <SearchOutlinedIcon id="search-icon" />
+                    {/* <SearchOutlinedIcon id="search-icon" /> */}
                     <AppsIcon ref={this.appIconAnim} id="nav-pop-icon-body" onClick={() => {
                         this.openDrawer();
                     }}/>
@@ -133,8 +132,8 @@ export default class Navbar extends React.Component {
                     <BrandName id="brand-name"/>
                 </span>
                 <span className="nav-bar-extra2">
-                    <Person2OutlinedIcon id="profile-icon" />
-                    <ShoppingCartOutlinedIcon id="cart-icon" />
+                    {/* <Person2OutlinedIcon id="profile-icon" />
+                    <ShoppingCartOutlinedIcon id="cart-icon" /> */}
                 </span>
             </section>
 
@@ -142,7 +141,7 @@ export default class Navbar extends React.Component {
 
                 {
                     this.state.itemData.map((data,index) => {
-                        return <NavItem timeline={this.props.timeline} effect={this.props.effect} name={data.item} subItems={data.subItem} />
+                        return <NavItem key={index} keyVal={index} onClick={() => this.props.navigate('/product')} timeline={this.props.timeline} effect={this.props.effect} name={data.item} subItems={data.subItem} />
                     })
                 }
                 {/* <NavItem name="SOCKS" subItems={this.state.socks} />
@@ -152,7 +151,7 @@ export default class Navbar extends React.Component {
                 <NavItem name="NEW ARRIVALS" subItems={[]} />
                 <NavItem name="BEST SELLER" subItems={[]} /> */}
             </section>
-            <Sidebar visibility={this.state.visibility} items={this.state.itemData} isOpen={this.state.isOpen} width={this.state.width} closeDrawer={ () => this.closeDrawer()}/>
+            <Sidebar navigate={this.props.navigate} visibility={this.state.visibility} items={this.state.itemData} isOpen={this.state.isOpen} width={this.state.width} closeDrawer={ () => this.closeDrawer()}/>
         </div>);
     }
 

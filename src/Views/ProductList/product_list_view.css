@@ -1,0 +1,114 @@
+#main #body-section{
+    width: 100%;
+    display: flex;
+    /* background-color: aqua; */
+}
+
+#main #body-section #sidebar-section{
+    /* width: ; */
+    
+    /* background-color: aliceblue; */
+    height: 80vh;
+    border-right: 1px #EFEFEF solid;
+    padding: 10px;
+    margin: 10px;
+    flex: 3
+}
+
+#main #body-section #product-list-section{
+    /* width: ; */
+    /* background-color: antiquewhite; */
+    padding: 10px;
+    margin: 10px;
+    flex: 15;
+    justify-content: center;
+    
+}
+
+#main #body-section #sidebar-section #title{
+    font-family: var(--main-font);
+    color: var(--main-black-color);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 450;
+}
+
+
+#main #head-title{
+    color: var(--main-black-color);
+    font-family: var(--main-font);
+    font-size: 5vmin;
+    font-weight: 450;
+    margin: 0px;
+    letter-spacing: 2px;
+    justify-content: center;
+    text-align: center;
+}
+
+#main #body-section #product-list-section #product-list-section-body{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    /* overflow: hidden; */
+    width: 100%;
+    /* flex-wrap: wrap;
+    justify-content: space-evenly; */
+}
+
+#main #body-section #nav-section{
+    
+    justify-content: space-between;
+    display: none;
+}
+
+#main #body-section #nav-section #item1,#item2{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    border: #EFEFEF 2px solid;
+}
+
+#main #body-section #nav-section h3{
+    font-family: var(--main-font);
+    color: var(--main-black-color);
+    font-weight: 400;
+    margin: 10%;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    #main #body-section #product-list-section #product-list-section-body{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* flex-wrap: wrap;
+        justify-content: space-evenly; */
+        overflow: hidden;
+    }
+    
+    #main #body-section #sidebar-section{
+        display: none;
+    }
+
+    #main #body-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* background-color: aqua; */
+    }
+    
+    #main #body-section #nav-section{
+        display: flex;
+    }
+
+
+}

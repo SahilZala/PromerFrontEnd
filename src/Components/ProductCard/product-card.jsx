@@ -9,8 +9,8 @@ export default function ProductCard(){
             {/* <p className="product-real-price">$10</p> */}
         </div>
         <div className="product-button">
-            <button id="b1">ADD TO CART</button>
-            <button id="b2">VIEW DETAILS</button>
+            <button id="b1">VIEW DETAILS</button>
+            {/* <button id="b2">VIEW DETAILS</button> */}
         </div>
 
     </div>;

@@ -19,7 +19,6 @@ export default class CustomeCarousel extends React.Component {
 
     render() {
         
-        console.log(this.state.screenCrousalIndex);
         return (<section style={{display: "flex"}}>
             <div class="slideshow-container">
                 <div className="mySlides">

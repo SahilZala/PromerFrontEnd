@@ -5,6 +5,7 @@
   height: 12vmin;
   overflow-x: hidden;
   overflow: hidden;
+  
   /* background-color: yellow; */
 }
 
@@ -18,29 +19,33 @@
     position: absolute;
     white-space: nowrap;
     will-change: transform;
-    animation: marquee 30s linear infinite;      
+    animation: marquee 25s linear infinite;      
 }
 
-#marquee-banner-section2 h1{ 
+#marquee-banner-section1 #second-tag h1{      
+  color: wheat;
+  border: 2px black solid;
+}
+
+/* #marquee-banner-section2 h1{ 
     font-family: var(--main-font);
     font-size: 10vmin;
     margin: 0px;
     padding: 0px;
-    /* background-color: aqua; */
     width: fit-content;
     position: absolute;
     white-space: nowrap;
     will-change: transform;
     animation: revmarquee 31s linear infinite;      
-}
+} */
 
 @keyframes marquee {
     from { transform: translateX(0%); }
     to { transform: translateX(-50%); }
   }
-  
+/*   
   @keyframes revmarquee {
     from { transform: translateX(-50%); }
     to { transform: translateX(0%); }
   }
-  
+   */

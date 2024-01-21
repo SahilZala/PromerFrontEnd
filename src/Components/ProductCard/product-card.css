@@ -1,12 +1,12 @@
 .product-container{
-    width: 266px;
+    width: 16vw;
     background-color: #F8F8F8;
     margin: 10px;
     display: flex;
     flex-direction: column;
 }
 
-.product-container .product-image{
+.product-container img{
     height: 260px;
     width: 100%;
     flex: 5;
@@ -15,7 +15,7 @@
 .product-container .product-name{
     margin: 5% 5% 5% 5%;
     font-family: var(--main-font);
-    font-size: 18px;
+    font-size: 1.2vmax;
     font-weight: 400;
     text-align: center;
     flex:1
@@ -48,6 +48,7 @@
     font-family: var(--main-font);
     font-size: 15px;
     cursor: pointer;
+    max-height: 50px;
 }
 
 
@@ -76,9 +77,9 @@
     
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .product-container{
-        width: 40vw;
+        width: 39vw;
         background-color: #F8F8F8;
         margin: 10px;
         display: flex;

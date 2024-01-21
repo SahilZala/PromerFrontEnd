@@ -9,7 +9,7 @@ export default function SidebarItem(props){
         
         </div>  
         {isop === true ? <div className="subitem">
-            {props.item.subItem.map((data,index) => <h4>{data.item}</h4>)}
+            {props.item.subItem.map((data,index) => <h4 key={index} onClick={() => {props.onClick()}}>{data.item}</h4>)}
             
         </div> : <></>}
        

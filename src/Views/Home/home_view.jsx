@@ -10,9 +10,10 @@ import MarqueeBanner from "../../Components/MarqueeBanner/marquee_banner";
 import { CSSPlugin } from "gsap/CSSPlugin";
 import CoreDetails from "../../Components/CoreDetails/core-details";
 import Footer from "../../Components/Footer/footer";
+import {useNavigate} from 'react-router-dom';
 // import Footer from "../../Components/Footer/footer";
 // const C = CSSPlugin;
-export default class HomeView extends React.Component
+class HomeViewMain extends React.Component
 {
     constructor(){
         super();
@@ -26,7 +27,7 @@ export default class HomeView extends React.Component
         return(
             <section id="main">
                     <section id="nav-section">
-                    <Navbar gsap={this.gsap} effect={this.effect}/>
+                    <Navbar navigate={this.props.navigate} gsap={this.gsap} effect={this.effect}/>
                 </section>
 
                 <section id="crousal-section">
@@ -67,4 +68,9 @@ export default class HomeView extends React.Component
             </section>
         );
     }
+}
+
+
+export default function HomeView(){
+    return <HomeViewMain navigate = {useNavigate()}/>
 }
