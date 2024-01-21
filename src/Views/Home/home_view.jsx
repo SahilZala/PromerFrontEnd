@@ -17,7 +17,7 @@ class HomeViewMain extends React.Component
 {
     constructor(){
         super();
-
+        document.body.style.overflow = "scroll";
         this.gsap = gsap;
         this.gsap.registerPlugin(CSSPlugin);
         this.effect = Expo.easeInOut;

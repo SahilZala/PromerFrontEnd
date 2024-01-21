@@ -12,6 +12,7 @@ class ProductList extends React.Component {
 
     constructor(props) {
         super();
+        document.body.style.overflow = "scroll";
         this.gsap = gsap;
         this.gsap.registerPlugin(CSSPlugin);
         this.effect = Expo.easeInOut;
@@ -27,7 +28,7 @@ class ProductList extends React.Component {
             
             <section id="body-section">
                 
-                <section id="sidebar-section">
+                <section id="product-sidebar-section">
                     <h2 id="title" >Filters</h2>
                     <br/>
                     <ProductListSidebarItem mainItem="Product Type"/>

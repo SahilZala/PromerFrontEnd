@@ -4,7 +4,7 @@
     /* background-color: aqua; */
 }
 
-#main #body-section #sidebar-section{
+#main #body-section #product-sidebar-section{
     /* width: ; */
     
     /* background-color: aliceblue; */
@@ -25,7 +25,7 @@
     
 }
 
-#main #body-section #sidebar-section #title{
+#main #body-section #product-sidebar-section #title{
     font-family: var(--main-font);
     color: var(--main-black-color);
     margin-top: 15px;
@@ -76,13 +76,6 @@
     font-size: 15px;
 }
 
-
-
-
-
-
-
-
 @media (max-width: 800px) {
     #main #body-section #product-list-section #product-list-section-body{
         display: grid;
@@ -95,7 +88,7 @@
         overflow: hidden;
     }
     
-    #main #body-section #sidebar-section{
+    #main #body-section #product-sidebar-section{
         display: none;
     }
 
