@@ -12,10 +12,18 @@ class ProductList extends React.Component {
 
     constructor(props) {
         super();
+
         document.body.style.overflow = "scroll";
         this.gsap = gsap;
         this.gsap.registerPlugin(CSSPlugin);
         this.effect = Expo.easeInOut;
+
+
+        this.state = {
+            isFilterOpen: false,
+            isSortByOpen: false,
+            isExpanderOpen: false,
+        }
     }
 
     render() {
@@ -40,10 +48,38 @@ class ProductList extends React.Component {
                 <br/>
 
                 <section id="nav-section">
-                    <div id="item1"><h3>Filters</h3></div>
-                    <div id="item2"><h3>Sort by</h3></div>
-                </section>
+                <div style={{display: 'flex',justifyContent: 'space-between'}}>
+                    <div onClick={ () => this.setState({
+                         isFilterOpen: !this.state.isFilterOpen,
+                         isSortByOpen: false,
+                         isExpanderOpen: !this.state.isFilterOpen
+                    })} id="item1"><h3>Filters</h3></div>
+                    <div onClick={ () => this.setState({
+                         isFilterOpen: false,
+                         isSortByOpen: !this.state.isSortByOpen,
+                         isExpanderOpen: !this.state.isSortByOpen,
+                    })} id="item2"><h3>Sort by</h3></div>
+                </div>
+                <div id="product-nav-expander" style={{
+                    maxHeight: this.state.isExpanderOpen ? '1000px' : '0px'
+                }}>
+                    {this.state.isFilterOpen ? <>
+                        <ProductListSidebarItem mainItem="Product Type"/>
+                    <ProductListSidebarItem mainItem="Category"/>
+                    <ProductListSidebarItem mainItem="Size"/>
+                    <ProductListSidebarItem mainItem="Gender"/>
+                    </> : <></>}
 
+
+                    {this.state.isSortByOpen ? <>
+                        <ProductListSidebarItem mainItem="Product Type"/>
+                    <ProductListSidebarItem mainItem="Category"/>
+                    </> : <></>}
+                    
+                </div>
+                </section>
+                    
+               
 
                 <section id="product-list-section">
                     

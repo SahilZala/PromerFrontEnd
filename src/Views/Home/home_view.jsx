@@ -11,6 +11,7 @@ import { CSSPlugin } from "gsap/CSSPlugin";
 import CoreDetails from "../../Components/CoreDetails/core-details";
 import Footer from "../../Components/Footer/footer";
 import {useNavigate} from 'react-router-dom';
+// import Gallery from "../../Components/Gallery/gallery";
 // import Footer from "../../Components/Footer/footer";
 // const C = CSSPlugin;
 class HomeViewMain extends React.Component
@@ -31,7 +32,7 @@ class HomeViewMain extends React.Component
                 </section>
 
                 <section id="crousal-section">
-                    <CustomeCarousel/>
+                    <CustomeCarousel gsap={this.gsap} effect={Expo.easeIn} />
                 </section>
                 <br/>
                 <br/>
@@ -61,6 +62,11 @@ class HomeViewMain extends React.Component
                 </section>  
                 <br/>
                 <br/>
+                {/* <section id="gallery-component-section">
+                    <Gallery/>
+                </section>
+                <br/>
+                <br/> */}
 
                 <section id="footer-section"> 
                     <Footer/>

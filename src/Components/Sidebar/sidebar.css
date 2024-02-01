@@ -6,14 +6,14 @@
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  padding: 15px;
+  /* padding: 15px; */
   background-color: white; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s;
 }
 
-.sidenav .closebtn {
-    right: 25px;
+.items .closebtn {
     font-size: 36px;
+    padding: 15px;
     
 }

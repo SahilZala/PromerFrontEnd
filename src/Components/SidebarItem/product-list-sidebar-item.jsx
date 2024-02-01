@@ -7,7 +7,7 @@ export default function ProductListSidebarItem(props) {
 
     return <div className='product-list-sidebar-item'>
         <div className='main-item'>
-            <h3>{props.mainItem}</h3>
+            <h3 style={{margin: '0px'}}>{props.mainItem}</h3>
             {isop === false ? <Add onClick={()=>{
                 isOpen(true);
             }} className='add-icon'/> 

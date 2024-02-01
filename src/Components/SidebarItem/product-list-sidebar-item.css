@@ -19,6 +19,7 @@
     font-family: var(--main-font);
     color: var(--main-black-color);
     margin: 0px;
+    padding: 0px;
     font-weight: 400;
 }
 
