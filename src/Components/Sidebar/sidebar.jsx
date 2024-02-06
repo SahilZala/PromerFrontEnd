@@ -12,9 +12,7 @@ export default class Sidebar extends React.Component{
         return(<section  style={{width: this.props.width, visibility:this.props.visibility}} className="sidebar-section">
             <section className="items">
                 <br/>
-                <div style={{
-                    padding: '15px'
-                }} className="closebtn" onClick={()=>this.props.closeDrawer()}>
+                <div className="closebtn" onClick={()=>this.props.closeDrawer()}>
                     <Close/>
                 </div>
                 <br/>

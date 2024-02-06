@@ -7,8 +7,9 @@ import AppsIcon from '@mui/icons-material/Apps';
 // import Person2OutlinedIcon from '@mui/icons-material/Person2Outlined';
 // import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import Sidebar from "../Sidebar/sidebar";
+import {useNavigate} from 'react-router-dom';
 
-export default class Navbar extends React.Component {
+class NavbarComponent extends React.Component {
 
     
     constructor(props) {
@@ -34,6 +35,7 @@ export default class Navbar extends React.Component {
                 id: 1,
                 item: "HOME",
                 icon: <></>,
+                onClick: () => this.props.navigate('/'),
                 subItem: [
 
                 ],
@@ -44,49 +46,59 @@ export default class Navbar extends React.Component {
                 icon: <></>,
                 subItem: [ {
                     id: 21,
-                    item: "SOCKS"
+                    item: "SOCKS",
+                    onClick: () => this.props.navigate('/product'),
                 },
                 {
                     id: 22,
                     item: "SHORTS",
+                    onClick: () => this.props.navigate('/product'),
                 },
                 {
                     id: 23,
                     item: "T-SHIRTS",
+                    onClick: () => this.props.navigate('/product'),
                 },
                 {
                     id: 24,
                     item: "SCARFS",
+                    onClick: () => this.props.navigate('/product'),
                 },
                 {
                     id: 25,
                     item: "HOODIES",
+                    onClick: () => this.props.navigate('/product'),
                 },
                 {
                     id: 26,
                     item: "SWEAT SHIRTS",
+                    onClick: () => this.props.navigate('/product'),
                 }]
             },
             {
                 id: 3,
                 item: "NEW ARRIVALS",
+                onClick: () => this.props.navigate('/product'),
                 icon: <></>,
                 subItem: []
             },{
                 id: 4,
                 item: "BEST SELLER",
+                onClick: () => this.props.navigate('/product'),
                 icon: <></>,
                 subItem: []
             },
             {
                 id: 5,
                 item: "ABOUT US",
+                onClick: () => this.props.navigate('/about'),
                 icon: <></>,
                 subItem: []
             },
             {
                 id: 6,
                 item: "CONTACT DETAILS",
+                onClick: () => this.props.navigate('/'),
                 icon: <></>,
                 subItem: []
             }
@@ -141,7 +153,7 @@ export default class Navbar extends React.Component {
 
                 {
                     this.state.itemData.map((data,index) => {
-                        return <NavItem key={index} keyVal={index} onClick={() => this.props.navigate('/product')} timeline={this.props.timeline} effect={this.props.effect} name={data.item} subItems={data.subItem} />
+                        return <NavItem key={index} keyVal={index} onMainClick = {() => data.subItem.length === 0 ? data.onClick() : console.log()} timeline={this.props.timeline} effect={this.props.effect} name={data.item} subItems={data.subItem} />
                     })
                 }
                 {/* <NavItem name="SOCKS" subItems={this.state.socks} />
@@ -174,4 +186,9 @@ export default class Navbar extends React.Component {
         });
     }
 
+}
+
+
+export default function Navbar(props){
+    return (<NavbarComponent gsap={props.gsap} effect = {props.effect} navigate={useNavigate()}/>);
 }

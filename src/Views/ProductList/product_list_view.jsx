@@ -6,7 +6,10 @@ import gsap from "gsap/gsap-core";
 import CSSPlugin from "gsap/CSSPlugin";
 import { Expo } from "gsap";
 import ProductListSidebarItem from "../../Components/SidebarItem/product-list-sidebar-item";
-import ProductCard from "../../Components/ProductCard/product-card";
+// import ProductCard from "../../Components/ProductCard/product-card";
+import ProductTransaction from "../../Transaction/product_transaction";
+import NewProductCard from "../../Components/NewProductCard/new_product_card";
+import Footer from "../../Components/Footer/footer";
 
 class ProductList extends React.Component {
 
@@ -23,7 +26,19 @@ class ProductList extends React.Component {
             isFilterOpen: false,
             isSortByOpen: false,
             isExpanderOpen: false,
+            products: [],
         }
+    }
+
+
+    componentDidMount(){
+        ProductTransaction.getAllProducts().then((data) =>{
+            this.setState({
+                products: data
+            });
+        }).catch((err) => {
+            console.log(err);
+        });
     }
 
     render() {
@@ -84,20 +99,26 @@ class ProductList extends React.Component {
                 <section id="product-list-section">
                     
                     <section id="product-list-section-body">
-                        <ProductCard />
-                        <ProductCard />
-                        <ProductCard />
-                        
-                        <ProductCard />
-                        <ProductCard />
-                        <ProductCard />
-                        <ProductCard />
-                        <ProductCard />
-                        <ProductCard />
 
+                        {this.state.products.map((data) => <NewProductCard data={data}/>)}
+                        {this.state.products.map((data) => <NewProductCard data={data}/>)}
+                        {/*{this.state.products.map((data) => <ProductCard data={data}/>)} */}
                     </section>
                 </section>
+
+                
             </section>
+            <br/>
+                <br/>
+                {/* <section id="gallery-component-section">
+                    <Gallery/>
+                </section>
+                <br/>
+                <br/> */}
+
+                <section id="footer-section"> 
+                    <Footer/>
+                </section>
         </section>;
     }
 }

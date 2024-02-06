@@ -18,7 +18,7 @@ class HomeViewMain extends React.Component
 {
     constructor(){
         super();
-        document.body.style.overflow = "scroll";
+        // document.body.style.overflow = "scroll";
         this.gsap = gsap;
         this.gsap.registerPlugin(CSSPlugin);
         this.effect = Expo.easeInOut;
@@ -27,7 +27,7 @@ class HomeViewMain extends React.Component
     render(){
         return(
             <section id="main">
-                    <section id="nav-section">
+                <section id="nav-section">
                     <Navbar navigate={this.props.navigate} gsap={this.gsap} effect={this.effect}/>
                 </section>
 
