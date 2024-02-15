@@ -35,7 +35,7 @@ class NavbarComponent extends React.Component {
                 id: 1,
                 item: "HOME",
                 icon: <></>,
-                onClick: () => this.props.navigate('/'),
+                onClick: () => {this.props.navigate('/');this.props.navigate(0);},
                 subItem: [
 
                 ],
@@ -48,63 +48,63 @@ class NavbarComponent extends React.Component {
                 {
                     id: 20,
                     item: "ALL",
-                    onClick: () => this.props.navigate('/product',{state: {type: "ALL"}})
+                    onClick: () => {this.props.navigate('/product',{state: {type: "ALL"}}); this.props.navigate(0);} 
                 }, 
                 {
                     id: 21,
                     item: "SOCKS",
-                    onClick: () => this.props.navigate('/product',{state : {type: "SOCKS"}}),
+                    onClick: () => {this.props.navigate('/product',{state : {type: "SOCKS"}});this.props.navigate(0);},
                 },
                 {
                     id: 22,
                     item: "SHORTS",
-                    onClick: () => this.props.navigate('/product',{state : {type: "SHORTS"}}),
+                    onClick: () => {this.props.navigate('/product',{state : {type: "SHORTS"}}); this.props.navigate(0);},
                 },
                 {
                     id: 23,
                     item: "T-SHIRTS",
-                    onClick: () => this.props.navigate('/product',{state : {type: "T-SHIRTS"}}),
+                    onClick: () => {this.props.navigate('/product',{state : {type: "T-SHIRTS"}}); this.props.navigate(0);},
                 },
                 {
                     id: 24,
                     item: "SCARFS",
-                    onClick: () => this.props.navigate('/product',{state : {type: "SCARFS"}}),
+                    onClick: () => {this.props.navigate('/product',{state : {type: "SCARFS"}});this.props.navigate(0);},
                 },
                 {
                     id: 25,
                     item: "HOODIES",
-                    onClick: () => this.props.navigate('/product',{state : {type: "HOODIES"}}),
+                    onClick: () => {this.props.navigate('/product',{state : {type: "HOODIES"}}); this.props.navigate(0);},
                 },
                 {
                     id: 26,
                     item: "SWEAT SHIRTS",
-                    onClick: () => this.props.navigate('/product',{state : {type: "SWEAT SHIRTS"}}),
+                    onClick: () => {this.props.navigate('/product',{state : {type: "SWEAT SHIRTS"}}); this.props.navigate(0);},
                 }]
             },
             {
                 id: 3,
                 item: "NEW ARRIVALS",
-                onClick: () => this.props.navigate('/product',{state : {type: "SOCKS"}}),
+                onClick: () => {this.props.navigate('/product',{state : {type: "SOCKS"}}); this.props.navigate(0);},
                 icon: <></>,
                 subItem: []
             },{
                 id: 4,
                 item: "BEST SELLER",
-                onClick: () => this.props.navigate('/product',{state : {type: "SOCKS"}}),
+                onClick: () => {this.props.navigate('/product',{state : {type: "SOCKS"}}); this.props.navigate(0);},
                 icon: <></>,
                 subItem: []
             },
             {
                 id: 5,
                 item: "ABOUT US",
-                onClick: () => this.props.navigate('/about'),
+                onClick: () => {this.props.navigate('/about');this.props.navigate(0);},
                 icon: <></>,
                 subItem: []
             },
             {
                 id: 6,
                 item: "CONTACT DETAILS",
-                onClick: () => this.props.navigate('/'),
+                onClick: () => {this.props.navigate('/'); this.props.navigate(0);},
                 icon: <></>,
                 subItem: []
             }

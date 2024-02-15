@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter,Routes,Route} from 'react-router-dom';
 import HomeView from './Views/Home/home_view';
 import ProductListView from './Views/ProductList/product_list_view';
+import ProductDetails from './Views/ProductDetails/product_details';
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
       <Route path='/' index element={<HomeView/>}/>
       <Route path='/product' element={<ProductListView/>}/>
       <Route path='/about' element={<>about</>}/>
+      <Route path='/product/details' element={<ProductDetails/>}/>
+    
     </Routes>
    </BrowserRouter>
   );

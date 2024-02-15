@@ -11,7 +11,7 @@ import ProductTransaction from "../../Transaction/product_transaction";
 import NewProductCard from "../../Components/NewProductCard/new_product_card";
 import Footer from "../../Components/Footer/footer";
 import CategoryTrasaction from "../../Transaction/category_transaction";
-import {useLocation} from 'react-router-dom';
+import {useLocation,useNavigate} from 'react-router-dom';
 
 class ProductList extends React.Component {
 
@@ -114,16 +114,21 @@ class ProductList extends React.Component {
                     maxHeight: this.state.isExpanderOpen ? '1000px' : '0px'
                 }}>
                     {this.state.isFilterOpen ? <>
-                        <ProductListSidebarItem mainItem="Product Type"/>
-                    <ProductListSidebarItem mainItem="Category"/>
-                    <ProductListSidebarItem mainItem="Size"/>
-                    <ProductListSidebarItem mainItem="Gender"/>
+                        <ProductListSidebarItem mainItem="Category" subItem={this.state.categorys} onCheckedClick = {(id) => {
+                        let c = this.state.categorys;
+                        c.filter(d => d.id === id )[0].checked = !c.filter(d => d.id === id )[0].checked;
+                        this.setState({
+                            categorys: c
+                        });
+                    }}/>
+                    {/* <ProductListSidebarItem mainItem="Size" subItem={[]} />
+                    <ProductListSidebarItem mainItem="Gender" subItem={[]}/> */}
                     </> : <></>}
 
 
                     {this.state.isSortByOpen ? <>
-                        <ProductListSidebarItem mainItem="Product Type"/>
-                    <ProductListSidebarItem mainItem="Category"/>
+                        {/* <ProductListSidebarItem mainItem="Product Type"/>
+                    <ProductListSidebarItem mainItem="Category"/> */}
                     </> : <></>}
                     
                 </div>
@@ -134,8 +139,8 @@ class ProductList extends React.Component {
                 <section id="product-list-section">
                     
                     {this.state.categorys.length > 0 ?  <section id="product-list-section-body">
-                        {this.state.products.map((data,index) => this.state.categorys.filter((val) => val.id === data.productVariant.mainCategory.id)[0].checked ? <NewProductCard key={index} data={data}/> : <></>)}
-                        {this.state.products.map((data,index) => this.state.categorys.filter((val) => val.id === data.productVariant.mainCategory.id)[0].checked ? <NewProductCard key={index} data={data}/> : <></>)}
+                        {this.state.products.map((data,index) => this.state.categorys.filter((val) => val.id === data.productVariant.mainCategory.id)[0].checked ? <NewProductCard onClick={(data) => {this.props.navigate('/product/details',{state: {data : data}})}} key={index} data={data}/> : <></>)}
+                        {this.state.products.map((data,index) => this.state.categorys.filter((val) => val.id === data.productVariant.mainCategory.id)[0].checked ? <NewProductCard onClick={(data) => {this.props.navigate('/product/details',{state: {data : data}})}} key={index} data={data}/> : <></>)}
                     </section> : <></>}
                    
                     
@@ -163,5 +168,5 @@ class ProductList extends React.Component {
 
 export default function ProductListView() {
 
-    return <ProductList productType = {useLocation().state.type} />
+    return <ProductList navigate={useNavigate()} productType = {useLocation().state.type} />
 }

@@ -33,11 +33,19 @@
     opacity: 0.7;
   }
 
+  .card h1{
+    text-overflow: ellipsis;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: .5rem;
+    background-color: aliceblue ;
+  }
 
   @media (max-width: 600px) {
     .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        width: 150px;
+        width: 42vw;
         margin: .5rem;
         text-align: center;
         font-family: arial;
@@ -45,7 +53,7 @@
       }
       
     .card img{
-        height: 150px;
+        height: 42vw;
         width: 100%;
     }
 

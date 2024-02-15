@@ -11,6 +11,7 @@ import { CSSPlugin } from "gsap/CSSPlugin";
 import CoreDetails from "../../Components/CoreDetails/core-details";
 import Footer from "../../Components/Footer/footer";
 import {useNavigate} from 'react-router-dom';
+
 // import Gallery from "../../Components/Gallery/gallery";
 // import Footer from "../../Components/Footer/footer";
 // const C = CSSPlugin;
@@ -78,5 +79,6 @@ class HomeViewMain extends React.Component
 
 
 export default function HomeView(){
+    console.log(useNavigate().name);
     return <HomeViewMain navigate = {useNavigate()}/>
 }

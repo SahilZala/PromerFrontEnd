@@ -104,6 +104,16 @@
         justify-content: space-evenly; 
         overflow: hidden;
     } */
+
+    #main #body-section #product-list-section{
+        /* width: ; */
+        /* background-color: antiquewhite; */
+        padding: 5px;
+        margin: 5px;
+        flex: 15;
+        justify-content: space-around;
+        
+    }
     
     #main #body-section #product-sidebar-section{
         display: none;
