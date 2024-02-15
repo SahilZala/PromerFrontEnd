@@ -2,8 +2,8 @@ import { Add, Minimize } from '@mui/icons-material';
 import './product-list-sidebar-item.css';
 import React, { useState } from 'react';
 export default function ProductListSidebarItem(props) {
-
     const [isop,isOpen] = useState(false);
+
 
     return <div className='product-list-sidebar-item'>
         <div className='main-item'>
@@ -19,18 +19,16 @@ export default function ProductListSidebarItem(props) {
         <div style={{
             maxHeight: isop ? '1000px' : '0'
         }} className='sub-item'>
-            <div className='sub-item-body'>
-                <h4>Socks</h4>
-                <input type="checkbox" />
-            </div>
-            <div className='sub-item-body'>
-                <h4>Socks</h4>
-                <input type="checkbox" />
-            </div>
-            <div className='sub-item-body'>
-                <h4>Socks</h4>
-                <input type="checkbox" />
-            </div>
+
+            {props.subItem.map((data) => 
+                <div key = {data.id} className='sub-item-body'>
+                <h4>{data.title}</h4>
+                <input onClick={()=>{
+                    props.onCheckedClick(data.id);
+                }} checked={data.checked}  type="checkbox" />
+            </div>   
+            )}
+
         </div>
     </div>;
 }

@@ -44,47 +44,53 @@ class NavbarComponent extends React.Component {
                 id: 2,
                 item: "PRODUCTS",
                 icon: <></>,
-                subItem: [ {
+                subItem: [
+                {
+                    id: 20,
+                    item: "ALL",
+                    onClick: () => this.props.navigate('/product',{state: {type: "ALL"}})
+                }, 
+                {
                     id: 21,
                     item: "SOCKS",
-                    onClick: () => this.props.navigate('/product'),
+                    onClick: () => this.props.navigate('/product',{state : {type: "SOCKS"}}),
                 },
                 {
                     id: 22,
                     item: "SHORTS",
-                    onClick: () => this.props.navigate('/product'),
+                    onClick: () => this.props.navigate('/product',{state : {type: "SHORTS"}}),
                 },
                 {
                     id: 23,
                     item: "T-SHIRTS",
-                    onClick: () => this.props.navigate('/product'),
+                    onClick: () => this.props.navigate('/product',{state : {type: "T-SHIRTS"}}),
                 },
                 {
                     id: 24,
                     item: "SCARFS",
-                    onClick: () => this.props.navigate('/product'),
+                    onClick: () => this.props.navigate('/product',{state : {type: "SCARFS"}}),
                 },
                 {
                     id: 25,
                     item: "HOODIES",
-                    onClick: () => this.props.navigate('/product'),
+                    onClick: () => this.props.navigate('/product',{state : {type: "HOODIES"}}),
                 },
                 {
                     id: 26,
                     item: "SWEAT SHIRTS",
-                    onClick: () => this.props.navigate('/product'),
+                    onClick: () => this.props.navigate('/product',{state : {type: "SWEAT SHIRTS"}}),
                 }]
             },
             {
                 id: 3,
                 item: "NEW ARRIVALS",
-                onClick: () => this.props.navigate('/product'),
+                onClick: () => this.props.navigate('/product',{state : {type: "SOCKS"}}),
                 icon: <></>,
                 subItem: []
             },{
                 id: 4,
                 item: "BEST SELLER",
-                onClick: () => this.props.navigate('/product'),
+                onClick: () => this.props.navigate('/product',{state : {type: "SOCKS"}}),
                 icon: <></>,
                 subItem: []
             },

@@ -10,6 +10,8 @@ import ProductListSidebarItem from "../../Components/SidebarItem/product-list-si
 import ProductTransaction from "../../Transaction/product_transaction";
 import NewProductCard from "../../Components/NewProductCard/new_product_card";
 import Footer from "../../Components/Footer/footer";
+import CategoryTrasaction from "../../Transaction/category_transaction";
+import {useLocation} from 'react-router-dom';
 
 class ProductList extends React.Component {
 
@@ -27,18 +29,46 @@ class ProductList extends React.Component {
             isSortByOpen: false,
             isExpanderOpen: false,
             products: [],
+            categorys: [],
+            mainCategory: [],
+            subCategory: []
         }
     }
 
 
     componentDidMount(){
         ProductTransaction.getAllProducts().then((data) =>{
+
             this.setState({
                 products: data
             });
         }).catch((err) => {
             console.log(err);
         });
+
+        CategoryTrasaction.getMainandSubCategory().then((data) => {
+
+            let finalData = [];
+            
+            data.forEach((val) =>{
+                finalData.push({
+                id: val.id,
+                title: val.title,
+                checked: this.props.productType.toString().toLowerCase() === "all" ? true : val.title.toString().toLowerCase() === this.props.productType.toString().toLowerCase() ? true : false,
+
+                subCategory: val.subCategory.map((sub) => {
+                    return {id: sub.id,title: sub.title, checked: false};
+                })
+            })}
+            
+            )
+
+            this.setState({
+                categorys: finalData
+            })
+        }).catch((err) => {
+            console.log(err);
+        })
     }
 
     render() {
@@ -54,10 +84,15 @@ class ProductList extends React.Component {
                 <section id="product-sidebar-section">
                     <h2 id="title" >Filters</h2>
                     <br/>
-                    <ProductListSidebarItem mainItem="Product Type"/>
-                    <ProductListSidebarItem mainItem="Category"/>
-                    <ProductListSidebarItem mainItem="Size"/>
-                    <ProductListSidebarItem mainItem="Gender"/>
+                    <ProductListSidebarItem mainItem="Category" subItem={this.state.categorys} onCheckedClick = {(id) => {
+                        let c = this.state.categorys;
+                        c.filter(d => d.id === id )[0].checked = !c.filter(d => d.id === id )[0].checked;
+                        this.setState({
+                            categorys: c
+                        });
+                    }}/>
+                    <ProductListSidebarItem mainItem="Size" subItem={[]} />
+                    <ProductListSidebarItem mainItem="Gender" subItem={[]}/>
                 </section>
                 
                 <br/>
@@ -98,12 +133,12 @@ class ProductList extends React.Component {
 
                 <section id="product-list-section">
                     
-                    <section id="product-list-section-body">
-
-                        {this.state.products.map((data) => <NewProductCard data={data}/>)}
-                        {this.state.products.map((data) => <NewProductCard data={data}/>)}
-                        {/*{this.state.products.map((data) => <ProductCard data={data}/>)} */}
-                    </section>
+                    {this.state.categorys.length > 0 ?  <section id="product-list-section-body">
+                        {this.state.products.map((data,index) => this.state.categorys.filter((val) => val.id === data.productVariant.mainCategory.id)[0].checked ? <NewProductCard key={index} data={data}/> : <></>)}
+                        {this.state.products.map((data,index) => this.state.categorys.filter((val) => val.id === data.productVariant.mainCategory.id)[0].checked ? <NewProductCard key={index} data={data}/> : <></>)}
+                    </section> : <></>}
+                   
+                    
                 </section>
 
                 
@@ -127,5 +162,6 @@ class ProductList extends React.Component {
 
 
 export default function ProductListView() {
-    return <ProductList />
+
+    return <ProductList productType = {useLocation().state.type} />
 }
