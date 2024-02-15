@@ -1,4 +1,3 @@
-import { InfoRounded } from '@mui/icons-material';
 import './new_product_card.css';
 import React from 'react';
 export default function NewProductCard(props){
