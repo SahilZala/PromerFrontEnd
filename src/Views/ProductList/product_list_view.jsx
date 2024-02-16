@@ -31,7 +31,8 @@ class ProductList extends React.Component {
             products: [],
             categorys: [],
             mainCategory: [],
-            subCategory: []
+            subCategory: [],
+            type: props.productType
         }
     }
 
@@ -72,6 +73,32 @@ class ProductList extends React.Component {
     }
 
     render() {
+        
+        console.log(this.props.productType);
+        console.log(this.state.type);
+        
+        if(this.props.productType !== this.state.type){
+            let finalData = [];
+            
+            this.state.categorys.forEach((val) =>{
+                finalData.push({
+                id: val.id,
+                title: val.title,
+                checked: this.props.productType.toString().toLowerCase() === "all" ? true : val.title.toString().toLowerCase() === this.props.productType.toString().toLowerCase() ? true : false,
+
+                subCategory: val.subCategory.map((sub) => {
+                    return {id: sub.id,title: sub.title, checked: false};
+                })
+            })}
+            
+            )
+
+            this.setState({
+                type: this.props.productType,
+                categorys: finalData
+            });
+        }
+
         return <section id="main">
             <section id="nav-section">
                 <Navbar navigate={this.props.navigate} gsap={this.gsap} effect={this.effect} />
@@ -168,5 +195,6 @@ class ProductList extends React.Component {
 
 export default function ProductListView() {
 
+    console.log(useLocation().state.type);
     return <ProductList navigate={useNavigate()} productType = {useLocation().state.type} />
 }

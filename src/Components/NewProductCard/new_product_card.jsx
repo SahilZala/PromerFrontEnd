@@ -17,7 +17,7 @@ export default function NewProductCard(props){
     //     </section>
     // </section>;
 
-    return <div class="card">
+    return <div key={props.key} class="card">
     <img src={props.data.productImages === undefined ? "https://www.collinsdictionary.com/images/full/sock_99256316_1000.jpg" : props.data.productImages[0].url} alt="productx" />
     {/* <h1>{props.data.productDetails.title.toString().length > 15 ? props.data.productDetails.title.toString().substring(0,15)+"..." : props.data.productDetails.title } </h1> */}
     <h1>{props.data.productDetails.title}</h1>
