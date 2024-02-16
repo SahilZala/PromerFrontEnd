@@ -72,11 +72,7 @@ class ProductList extends React.Component {
         })
     }
 
-    render() {
-        
-        console.log(this.props.productType);
-        console.log(this.state.type);
-        
+    render() { 
         if(this.props.productType !== this.state.type){
             let finalData = [];
             

@@ -12,11 +12,15 @@ class ProductDetailsComponent extends React.Component{
 
     constructor(props){
         super(props);
-        document.body.style.overflow = "scroll";
         this.gsap = gsap;
         this.gsap.registerPlugin(CSSPlugin);
         this.effect = Expo.easeInOut;
         
+
+        this.state = {
+            selectedImageUrl : props.data.productImages === undefined ? "https://www.collinsdictionary.com/images/full/sock_99256316_1000.jpg" : 
+                this.props.data.productImages[0].url
+        }
 
     }
 
@@ -29,7 +33,34 @@ class ProductDetailsComponent extends React.Component{
             <section className="container">
                 <section className="product-image">
                     <section className="main">
-                        <img src={this.props.data.productImages === undefined ? "https://www.collinsdictionary.com/images/full/sock_99256316_1000.jpg" : this.props.data.productImages[0].url} alt=""/>
+                        <img src={this.props.data.productImages === undefined ? "https://www.collinsdictionary.com/images/full/sock_99256316_1000.jpg" : this.state.selectedImageUrl} alt=""/>
+                    </section>
+
+                    <section className="sub">
+                        <div className="image-container">
+
+                            {this.props.data.productImages === undefined ? <></> : this.props.data.productImages.map((image,index) => 
+                                <img style={image.url === this.state.selectedImageUrl ? {
+                                    border: "3px tomato solid",
+                                    padding: "2px",
+                                    borderRadius: ".4rem",
+                                    
+                                } : {}}  key={index} onClick={() => {
+                                    this.setState({
+                                        selectedImageUrl: image.url
+                                    })
+                                }} src={image.url} alt=""/>
+                            )}
+
+                            {/* <img src={this.props.data.productImages === undefined ? "https://www.collinsdictionary.com/images/full/sock_99256316_1000.jpg" : this.props.data.productImages[0].url} alt=""/> */}
+                            {/* <img src={this.props.data.productImages === undefined ? "https://www.collinsdictionary.com/images/full/sock_99256316_1000.jpg" : this.props.data.productImages[0].url} alt=""/>
+                            <img src={this.props.data.productImages === undefined ? "https://www.collinsdictionary.com/images/full/sock_99256316_1000.jpg" : this.props.data.productImages[0].url} alt=""/>
+                            <img src={this.props.data.productImages === undefined ? "https://www.collinsdictionary.com/images/full/sock_99256316_1000.jpg" : this.props.data.productImages[0].url} alt=""/>
+                            <img src={this.props.data.productImages === undefined ? "https://www.collinsdictionary.com/images/full/sock_99256316_1000.jpg" : this.props.data.productImages[0].url} alt=""/>
+                            <img src={this.props.data.productImages === undefined ? "https://www.collinsdictionary.com/images/full/sock_99256316_1000.jpg" : this.props.data.productImages[0].url} alt=""/>
+                            <img src={this.props.data.productImages === undefined ? "https://www.collinsdictionary.com/images/full/sock_99256316_1000.jpg" : this.props.data.productImages[0].url} alt=""/>
+                            <img src={this.props.data.productImages === undefined ? "https://www.collinsdictionary.com/images/full/sock_99256316_1000.jpg" : this.props.data.productImages[0].url} alt=""/> */}
+                        </div>
                     </section>
                 </section>
                  
@@ -95,7 +126,6 @@ class ProductDetailsComponent extends React.Component{
                             }
                         </p>
                     </div>
-
                 </section>
             </section>
 
