@@ -5,41 +5,45 @@ export default class Gallery extends React.Component{
         return <section className="gallery-container">
         <section className="row">
             <section className="column">
-            <img src="https://images.pexels.com/photos/19748403/pexels-photo-19748403/free-photo-of-a-red-and-white-striped-tent-in-front-of-a-building.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
+            <img src="https://images.pexels.com/photos/4210863/pexels-photo-4210863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
                 
-                <img src="https://images.pexels.com/photos/19861151/pexels-photo-19861151/free-photo-of-a-mountain-stream-is-flowing-through-a-forest.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/14577237/pexels-photo-14577237.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/14577237/pexels-photo-14577237.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/19861151/pexels-photo-19861151/free-photo-of-a-mountain-stream-is-flowing-through-a-forest.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/14577237/pexels-photo-14577237.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/19787758/pexels-photo-19787758/free-photo-of-fallen-leaves-on-road-in-park.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
+                <img src="https://images.pexels.com/photos/405034/pexels-photo-405034.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""/>
+                <img src="https://images.pexels.com/photos/251454/pexels-photo-251454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+                <img src="https://images.pexels.com/photos/251454/pexels-photo-251454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+                <img src="https://images.pexels.com/photos/7147450/pexels-photo-7147450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+                <img src="https://images.pexels.com/photos/251454/pexels-photo-251454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+                <img src="https://images.pexels.com/photos/405034/pexels-photo-405034.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""/>
+                <img src="https://firebasestorage.googleapis.com/v0/b/miraclesstyle-1d805.appspot.com/o/Banner%2Fpromer.png?alt=media&token=71103483-ab84-48db-8c4e-7cf1470fea5a" alt=""/>
             </section>
             <section className="column">
-                <img src="https://images.pexels.com/photos/19748403/pexels-photo-19748403/free-photo-of-a-red-and-white-striped-tent-in-front-of-a-building.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/19861151/pexels-photo-19861151/free-photo-of-a-mountain-stream-is-flowing-through-a-forest.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/14577237/pexels-photo-14577237.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/19787758/pexels-photo-19787758/free-photo-of-fallen-leaves-on-road-in-park.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/14577237/pexels-photo-14577237.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/19861151/pexels-photo-19861151/free-photo-of-a-mountain-stream-is-flowing-through-a-forest.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/14577237/pexels-photo-14577237.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
+            <img src="https://firebasestorage.googleapis.com/v0/b/miraclesstyle-1d805.appspot.com/o/Banner%2Fpromer.png?alt=media&token=71103483-ab84-48db-8c4e-7cf1470fea5a" alt=""/>
+                <img src="https://images.pexels.com/photos/7147450/pexels-photo-7147450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+                <img src="https://images.pexels.com/photos/251454/pexels-photo-251454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+                <img src="https://images.pexels.com/photos/405034/pexels-photo-405034.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""/>
+                <img src="https://images.pexels.com/photos/251454/pexels-photo-251454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+                <img src="https://images.pexels.com/photos/7147450/pexels-photo-7147450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+                <img src="https://images.pexels.com/photos/251454/pexels-photo-251454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+                <img src="https://firebasestorage.googleapis.com/v0/b/miraclesstyle-1d805.appspot.com/o/Banner%2Fpromer.png?alt=media&token=71103483-ab84-48db-8c4e-7cf1470fea5a" alt=""/>
             </section>
             <section className="column">
-                <img src="https://images.pexels.com/photos/19861151/pexels-photo-19861151/free-photo-of-a-mountain-stream-is-flowing-through-a-forest.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/14577237/pexels-photo-14577237.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/19748403/pexels-photo-19748403/free-photo-of-a-red-and-white-striped-tent-in-front-of-a-building.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/14577237/pexels-photo-14577237.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/19861151/pexels-photo-19861151/free-photo-of-a-mountain-stream-is-flowing-through-a-forest.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/14577237/pexels-photo-14577237.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/19787758/pexels-photo-19787758/free-photo-of-fallen-leaves-on-road-in-park.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
+            <img src="https://firebasestorage.googleapis.com/v0/b/miraclesstyle-1d805.appspot.com/o/Banner%2Fpromer.png?alt=media&token=71103483-ab84-48db-8c4e-7cf1470fea5a" alt=""/>
+                <img src="https://images.pexels.com/photos/251454/pexels-photo-251454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+                <img src="https://images.pexels.com/photos/405034/pexels-photo-405034.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""/>
+                <img src="https://images.pexels.com/photos/251454/pexels-photo-251454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+                <img src="https://images.pexels.com/photos/7147450/pexels-photo-7147450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+                <img src="https://firebasestorage.googleapis.com/v0/b/miraclesstyle-1d805.appspot.com/o/Banner%2Fpromer.png?alt=media&token=71103483-ab84-48db-8c4e-7cf1470fea5a" alt=""/>
+                <img src="https://images.pexels.com/photos/4210863/pexels-photo-4210863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+                <img src="https://firebasestorage.googleapis.com/v0/b/miraclesstyle-1d805.appspot.com/o/Banner%2Fpromer.png?alt=media&token=71103483-ab84-48db-8c4e-7cf1470fea5a" alt=""/>
             </section>
             <section className="column">
-                <img src="https://images.pexels.com/photos/19748403/pexels-photo-19748403/free-photo-of-a-red-and-white-striped-tent-in-front-of-a-building.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/19861151/pexels-photo-19861151/free-photo-of-a-mountain-stream-is-flowing-through-a-forest.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/14577237/pexels-photo-14577237.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/19787758/pexels-photo-19787758/free-photo-of-fallen-leaves-on-road-in-park.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/14577237/pexels-photo-14577237.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/19861151/pexels-photo-19861151/free-photo-of-a-mountain-stream-is-flowing-through-a-forest.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
-                <img src="https://images.pexels.com/photos/14577237/pexels-photo-14577237.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""/>
+                <img src="https://images.pexels.com/photos/4210863/pexels-photo-4210863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+                <img src="https://images.pexels.com/photos/7147450/pexels-photo-7147450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+                <img src="https://images.pexels.com/photos/251454/pexels-photo-251454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+                <img src="https://firebasestorage.googleapis.com/v0/b/miraclesstyle-1d805.appspot.com/o/Banner%2Fpromer.png?alt=media&token=71103483-ab84-48db-8c4e-7cf1470fea5a" alt=""/>
+                <img src="https://images.pexels.com/photos/251454/pexels-photo-251454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+                <img src="https://images.pexels.com/photos/7147450/pexels-photo-7147450.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+                <img src="https://images.pexels.com/photos/251454/pexels-photo-251454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
+                <img src="https://firebasestorage.googleapis.com/v0/b/miraclesstyle-1d805.appspot.com/o/Banner%2Fpromer.png?alt=media&token=71103483-ab84-48db-8c4e-7cf1470fea5a" alt=""/>
             </section>
             
             </section>           

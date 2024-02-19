@@ -17,7 +17,10 @@ export default class Sidebar extends React.Component{
                 </div>
                 <br/>
                 {
-                    this.props.items.map((data,index) => <SidebarItem onClick={(type) => { 
+                    this.props.items.map((data,index) => <SidebarItem onMainItemClick={() => {
+                        console.log(data);
+                        data.onClick();
+                    }} onClick={(type) => { 
                         this.props.navigate('/product',{state: {type: type}}) 
                          
                     }} key={index} item={data}/>)
