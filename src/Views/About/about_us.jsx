@@ -13,7 +13,6 @@ import Gallery from "../../Components/Gallery/gallery";
 class AboutUsComponent extends React.Component {
     constructor(props) {
         super(props);
-
         this.gsap = gsap;
         this.gsap.registerPlugin(CSSPlugin);
         this.effect = Expo.easeInOut;

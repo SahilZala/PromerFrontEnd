@@ -1,6 +1,7 @@
 #aboutus-main{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 #aboutus-main .banner{
@@ -19,7 +20,7 @@
     height: 100%;
     position: absolute;
     object-fit: cover;
-    z-index: 995;
+    z-index: 888;
 }
 
 #aboutus-main .banner .banner-container .gradient{
@@ -28,14 +29,14 @@
     position: absolute;
     background-image: linear-gradient(transparent,transparent, black);
     
-    z-index: 996;
+    z-index: 889;
 }
 
 #aboutus-main .banner .banner-container h1{
     
     position: absolute;
     color: black;
-    z-index: 999;
+    z-index: 890;
     color: white;
     font-size: 50px;
 

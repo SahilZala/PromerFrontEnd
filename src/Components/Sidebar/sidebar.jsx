@@ -4,6 +4,7 @@ import { Close } from "@mui/icons-material";
 import SidebarItem from "../SidebarItem/sidebar-item";
 export default class Sidebar extends React.Component{
     
+
     constructor(props){
         super();
     }
@@ -18,9 +19,11 @@ export default class Sidebar extends React.Component{
                 <br/>
                 {
                     this.props.items.map((data,index) => <SidebarItem onMainItemClick={() => {
+                        document.body.style.overflow = "scroll";
                         console.log(data);
                         data.onClick();
                     }} onClick={(type) => { 
+                        document.body.style.overflow = "scroll";
                         this.props.navigate('/product',{state: {type: type}}) 
                          
                     }} key={index} item={data}/>)
