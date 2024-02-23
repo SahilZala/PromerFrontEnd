@@ -36,7 +36,7 @@ class AboutUsComponent extends React.Component {
             </section>
             <br />
             <br />
-            <br />
+            {/* <br />
             <br />
             <section className="ourteam-section">
                 <h2>OUR TEAM</h2>
@@ -54,7 +54,7 @@ class AboutUsComponent extends React.Component {
                         <h2>Ketan Vaghela</h2>
                         <h4>Cheif Executive Officer, Co-founder</h4>
                     </div>
-                    <div className="team">
+                    <div className="team">  
                         <img src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" alt="" />
                         <h2>Ketan Vaghela</h2>
                         <h4>Cheif Executive Officer, Co-founder</h4>
@@ -67,7 +67,7 @@ class AboutUsComponent extends React.Component {
                 </section>
             </section>
             <br />
-            <br />
+            <br /> */}
             <section className="record-section">
                 <section className="container">
                         <div className="record">

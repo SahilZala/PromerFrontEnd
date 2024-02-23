@@ -104,7 +104,7 @@ class NavbarComponent extends React.Component {
             {
                 id: 6,
                 item: "CONTACT DETAILS",
-                onClick: () => {this.props.navigate('/');  },
+                onClick: () => {this.props.navigate('/contact');  },
                 icon: <></>,
                 subItem: []
             }
