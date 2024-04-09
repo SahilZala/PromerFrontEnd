@@ -1,7 +1,9 @@
 import React from "react";
-import './custome_carousel.css';
-import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+// import './custome_carousel.css';
+// import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
+// import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import { CCarousel,CCarouselItem, CImage } from '@coreui/react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class CustomeCarousel extends React.Component {
 
@@ -12,26 +14,30 @@ export default class CustomeCarousel extends React.Component {
             screenCrousalIndex: 0,
             screen: [
                 "https://soxytoes.com/cdn/shop/files/Theme_1A_Website.png?v=1697116566&width=2000",
-                "https://img.freepik.com/premium-vector/collection-cute-christmas-red-clothing-items-winter-warm-knitted-clothes-background_865741-363.jpg"
+                
             ]
         }
     }
 
     render() {
+
         
-        return (<section style={{display: "flex"}}>
-            <div class="slideshow-container">
-                <div className="mySlides">
-                    <img src={this.state.screen[this.state.screenCrousalIndex]} alt=""/>
-                </div>
-                <i class="prev" onClick={this.onNextClick}><NavigateBeforeIcon style={{
-                    fontSize: "30px"
-                }}/></i>
-                <i class="next" onClick={this.onNextClick}><NavigateNextIcon style={{
-                    fontSize: "30px"
-                }}/></i>
-            </div>
-        </section>
+        
+        return (
+
+            <CCarousel controls>
+            <CCarouselItem>
+                <CImage className="d-block w-100" src={this.state.screen[0]} alt="slide 1" />
+            </CCarouselItem>
+            <CCarouselItem>
+                <CImage className="d-block w-100" src={this.state.screen[0]} alt="slide 2" />
+            </CCarouselItem>
+            <CCarouselItem>
+                <CImage className="d-block w-100" src={this.state.screen[0]} alt="slide 3" />
+            </CCarouselItem>
+            </CCarousel>
+
+
         );
     }
 

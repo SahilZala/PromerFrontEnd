@@ -1,4 +1,4 @@
-.slideshow-container {
+/* .slideshow-container {
     height: 75vmin;
     width: 100vw;
     background-color: aliceblue;
@@ -11,7 +11,6 @@
     width: 100%;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
     cursor: pointer;
@@ -26,23 +25,69 @@
     user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
 
-/* Fading animation */
 .slideshow-container .mySlides img {
     height: 100%;
     width: 100%;
     object-fit: fill;
     transition: all ease 0.5s;
+} */
+
+.carousel { 
+    position: relative; 
+    width: 270px; 
+    height: 160px; 
+    overflow: hidden; 
+    background-color: #cdcdcd; 
+} 
+  
+.carousel-item .slide-image { 
+    width: 270px; 
+    height: 160px; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+} 
+  
+.carousel-item { 
+    position: absolute; 
+    width: 100%; 
+    height: 270px; 
+    border: none; 
+    top: 0; 
+    left: 100%; 
+} 
+  
+.carousel-item.active { 
+    left: 0; 
+    transition: all 0.3s ease-out; 
+} 
+  
+.carousel-item div { 
+    height: 100%; 
+} 
+  
+.red { 
+    background-color: red; 
+} 
+  
+.green { 
+    background-color: green; 
+} 
+  
+.yellow { 
+    background-color: yellow; 
+} 
+  
+.violet { 
+    background-color: violet; 
 }

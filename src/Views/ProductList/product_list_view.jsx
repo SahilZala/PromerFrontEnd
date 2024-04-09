@@ -12,6 +12,7 @@ import NewProductCard from "../../Components/NewProductCard/new_product_card";
 import Footer from "../../Components/Footer/footer";
 import CategoryTrasaction from "../../Transaction/category_transaction";
 import {useLocation,useNavigate} from 'react-router-dom';
+import SizeTransaction from "../../Transaction/size_transaction";
 
 class ProductList extends React.Component {
 
@@ -32,6 +33,7 @@ class ProductList extends React.Component {
             categorys: [],
             mainCategory: [],
             subCategory: [],
+            productSizeList: [],
             type: props.productType
         }
     }
@@ -42,6 +44,14 @@ class ProductList extends React.Component {
 
             this.setState({
                 products: data
+            });
+
+            SizeTransaction.getProductSize().then((data) => {
+               this.setState({
+                    productSizeList: data.map((sub) => {
+                        return {id: sub.id,title: sub.title, checked: this.state.products.map((val) => val.productVariant.size.id === sub.id ? true : false)};
+                    })
+               })
             });
         }).catch((err) => {
             console.log(err);
@@ -67,6 +77,8 @@ class ProductList extends React.Component {
             this.setState({
                 categorys: finalData
             })
+
+
         }).catch((err) => {
             console.log(err);
         })
@@ -114,8 +126,14 @@ class ProductList extends React.Component {
                             categorys: c
                         });
                     }}/>
-                    <ProductListSidebarItem mainItem="Size" subItem={[]} />
-                    <ProductListSidebarItem mainItem="Gender" subItem={[]}/>
+                    {/* <ProductListSidebarItem mainItem="Size" subItem={this.state.productSizeList} onCheckedClick = {(id) => {
+                        let c = this.state.productSizeList;
+                        c.filter(d => d.id === id )[0].checked = !c.filter(d => d.id === id )[0].checked;
+                        this.setState({
+                            categorys: c
+                        });
+                    }} />
+                    <ProductListSidebarItem mainItem="Gender" subItem={[]}/> */}
                 </section>
                 
                 <br/>
