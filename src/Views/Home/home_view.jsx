@@ -12,7 +12,6 @@ import CoreDetails from "../../Components/CoreDetails/core-details";
 import Footer from "../../Components/Footer/footer";
 import {useNavigate} from 'react-router-dom';
 import Banner from "../../Components/Banner/banner";
-import ProductSlider from "../../Components/ProductSlider/product-slider";
 
 // import Gallery from "../../Components/Gallery/gallery";
 // import Footer from "../../Components/Footer/footer";
@@ -64,23 +63,14 @@ class HomeViewMain extends React.Component
                 <br/>
                 <br/>
                 
-                {/* <section id="top-pics-section">
-                    <TopPicsProducts/>
-                </section>
-                <br/>
-                <br/> */}
+              
                 <section id="core-details-section">
                     <CoreDetails/>
                 </section>  
                 <br/>
                 <br/>
 
-                <section id="core-details-section">
-                    {/* <ProductSlider products={}/> */}
-                </section>  
-                <br/>
-                <br/>
-
+              
                 {/* <section id="gallery-component-section">
                     <Gallery/>
                 </section>
