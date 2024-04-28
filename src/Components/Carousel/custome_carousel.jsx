@@ -13,7 +13,7 @@ export default class CustomeCarousel extends React.Component {
         this.state = {
             screenCrousalIndex: 0,
             screen: [
-                "https://soxytoes.com/cdn/shop/files/Theme_1A_Website.png?v=1697116566&width=2000",
+                "https://firebasestorage.googleapis.com/v0/b/miraclesstyle-1d805.appspot.com/o/Crousel%2FGroup%204.png?alt=media&token=cf83c6c7-c727-437f-933f-c724330d6ef4",
                 
             ]
         }
