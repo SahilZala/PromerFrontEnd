@@ -9,6 +9,6 @@ export default function OurStory(){
             an extension of your personality. Our socks aren't just accessories; 
             they're a canvas for your bold confidence and creative spirit.</p>
                     
-        <button id="our-story-read-more-button">READ MORE</button>
+        {/* <button id="our-story-read-more-button">READ MORE</button> */}
     </div>;
 }

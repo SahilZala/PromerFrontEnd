@@ -1,9 +1,10 @@
 import React from "react";
-// import './custome_carousel.css';
+import './custome_carousel.css';
 // import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 // import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { CCarousel,CCarouselItem, CImage } from '@coreui/react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export default class CustomeCarousel extends React.Component {
 
@@ -14,25 +15,24 @@ export default class CustomeCarousel extends React.Component {
             screenCrousalIndex: 0,
             screen: [
                 "https://firebasestorage.googleapis.com/v0/b/miraclesstyle-1d805.appspot.com/o/Crousel%2FGroup%204.png?alt=media&token=cf83c6c7-c727-437f-933f-c724330d6ef4",
-                
+
             ]
         }
     }
 
     render() {
-
         
         
         return (
 
-            <CCarousel controls>
-            <CCarouselItem>
+            <CCarousel controls className="crousle">
+            <CCarouselItem className="item">
                 <CImage className="d-block w-100" src={this.state.screen[0]} alt="slide 1" />
             </CCarouselItem>
-            <CCarouselItem>
+            <CCarouselItem className="item">
                 <CImage className="d-block w-100" src={this.state.screen[0]} alt="slide 2" />
             </CCarouselItem>
-            <CCarouselItem>
+            <CCarouselItem className="item" >
                 <CImage className="d-block w-100" src={this.state.screen[0]} alt="slide 3" />
             </CCarouselItem>
             </CCarousel>
@@ -41,7 +41,7 @@ export default class CustomeCarousel extends React.Component {
         );
     }
 
-    onPrevClick = () =>{
+    onPrevClick = () =>{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
         if(this.state.screenCrousalIndex === 0)
         {
             this.setState({

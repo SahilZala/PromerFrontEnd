@@ -42,7 +42,7 @@
     object-fit: fill;
     transition: all ease 0.5s;
 } */
-
+/* 
 .carousel { 
     position: relative; 
     width: 270px; 
@@ -90,4 +90,13 @@
   
 .violet { 
     background-color: violet; 
+} */
+
+
+.crousle{
+    width: 100vw;
+}
+
+.crousle .item{
+    /* height: 50vh; */
 }

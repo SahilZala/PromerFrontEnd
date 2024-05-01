@@ -1,14 +1,14 @@
 #brand-name{
     color: var(--brand-color);
     font-family: var(--brand-font);
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 3vmin;
+    font-weight: 600;
     flex: 1;
     justify-content: center;
     display: flex;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 600px) {
     #brand-name{
         color: var(--brand-color);
         font-family: var(--brand-font);
@@ -16,4 +16,4 @@
         font-weight: 700;
         flex: 0;
     }
-}
+}                                */

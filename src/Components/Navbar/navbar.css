@@ -58,30 +58,30 @@
 }
 
 
-#nav #section1 .nav-bar-brandname{
+/* #nav #section1 .nav-bar-brandname{
     overflow: hidden;
     cursor: pointer;
     position: relative;
-    width: 120px;
+    width: 200px;
     height: 35px;
-    /* background-color: aqua; */
-}
+    /* background-color: aqua;
+} */
 
 
-#nav #section1 .nav-bar-brandname #brand-name{
+/* #nav #section1 .nav-bar-brandname #brand-name{
     color: var(--brand-color);
     font-family: var(--brand-font);
     font-size: 30px;
     font-weight: 700;
     position: absolute;
     top: -35px;
-    /* top: -100px; */
+    top: -100px;
 
-}
+} */
 
 #nav #section1 .nav-bar-extra1 #search-icon {
 
-    font-size: 25px;
+    font-size: 35px;
     padding: 7px;
     cursor: pointer;
     position: absolute;
