@@ -149,10 +149,10 @@ class NavbarComponent extends React.Component {
                 {/* <span className="nav-bar-brandname"> */}
                     <BrandName id="brand-name"/>
                 {/* </span> */}
-                <span className="nav-bar-extra2">
-                    {/* <Person2OutlinedIcon id="profile-icon" />
-                    <ShoppingCartOutlinedIcon id="cart-icon" /> */}
-                </span>
+                {/* <span className="nav-bar-extra2">
+                    <Person2OutlinedIcon id="profile-icon" />
+                    <ShoppingCartOutlinedIcon id="cart-icon" />
+                </span> */}
             </section>
 
             <section id="section2">

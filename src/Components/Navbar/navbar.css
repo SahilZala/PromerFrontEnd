@@ -2,8 +2,9 @@
 #nav {
     padding: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border-bottom: 2px #F5F3F4 solid;
+    justify-content: space-between;
 }
 
 #nav #section1 {
@@ -113,8 +114,10 @@
         overflow: hidden;
         cursor: pointer;
         position: relative;
-        width: 100px;
+        font-size: 40px;
         height: 35px;
+        width: 50px;
+        
     }
 
     #nav #section1 .nav-bar-extra2 #profile-icon {
@@ -150,6 +153,7 @@
 
     #nav #section1 .nav-bar-extra1 #nav-pop-icon-body {
         display: flex;
+        font-size: 30px;
     }
     
     

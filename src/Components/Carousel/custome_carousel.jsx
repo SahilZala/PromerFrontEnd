@@ -15,7 +15,7 @@ export default class CustomeCarousel extends React.Component {
             screenCrousalIndex: 0,
             screen: [
                 "https://firebasestorage.googleapis.com/v0/b/miraclesstyle-1d805.appspot.com/o/Crousel%2FGroup%204.png?alt=media&token=cf83c6c7-c727-437f-933f-c724330d6ef4",
-
+             
             ]
         }
     }
@@ -36,8 +36,6 @@ export default class CustomeCarousel extends React.Component {
                 <CImage className="d-block w-100" src={this.state.screen[0]} alt="slide 3" />
             </CCarouselItem>
             </CCarousel>
-
-
         );
     }
 

@@ -8,7 +8,7 @@ import gsap from "gsap/gsap-core";
 import { Expo } from "gsap";
 import MarqueeBanner from "../../Components/MarqueeBanner/marquee_banner";
 import { CSSPlugin } from "gsap/CSSPlugin";
-import CoreDetails from "../../Components/CoreDetails/core-details";
+// import CoreDetails from "../../Components/CoreDetails/core-details";
 import Footer from "../../Components/Footer/footer";
 import {useNavigate} from 'react-router-dom';
 import Banner from "../../Components/Banner/banner";
@@ -64,9 +64,9 @@ class HomeViewMain extends React.Component
                 <br/>
                 
               
-                <section id="core-details-section">
+                {/* <section id="core-details-section">
                     <CoreDetails/>
-                </section>  
+                </section>   */}
                 <br/>
                 <br/>
 
