@@ -21,7 +21,7 @@ export default function NewProductCard(props){
     <img src={props.data.productImages === undefined ? "https://www.collinsdictionary.com/images/full/sock_99256316_1000.jpg" : props.data.productImages[0].url} alt="productx" />
     {/* <h1>{props.data.productDetails.title.toString().length > 15 ? props.data.productDetails.title.toString().substring(0,15)+"..." : props.data.productDetails.title } </h1> */}
     <h1>{props.data.productDetails.title}</h1>
-    <p class="price">₹ {props.data.productPricing.discountPrice}</p>
+    {/* <p class="price">₹ {props.data.productPricing.discountPrice}</p> */}
     
     <p><button onClick={() => props.onClick(props.data)}>VIEW DETAILS</button></p></div>;
 }

@@ -71,10 +71,10 @@ class ProductDetailsComponent extends React.Component{
                     }}>
                         <p className="index">#{this.props.data.productDetails.articleNumber} </p>
                         <h1 className="product-name">{this.props.data.productDetails.title} ({this.props.data.productDetails.subTitle})</h1>
-                        <div className="price-container">
+                        {/* <div className="price-container">
                             <label className="discount-price">₹ {this.props.data.productPricing.discountPrice}</label>
                             <label className="original-price">₹ {this.props.data.productPricing.realPrice}</label>
-                        </div>
+                        </div> */}
                     </div>
                     
 

@@ -7,7 +7,7 @@ export default function ProductCard(props){
         </div>
         <h5 className="product-name">{props.data.productDetails.title + " (" + props.data.productDetails.subTitle+")"}</h5>
         <div className="productpricing-division">
-            <p className="product-discounted-price">${props.data.productPricing.discountPrice}</p>
+            {/* <p className="product-discounted-price">${props.data.productPricing.discountPrice}</p> */}
             {/* <p className="product-real-price">$10</p> */}
         </div>
         <div className="product-button">
