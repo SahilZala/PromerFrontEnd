@@ -181,7 +181,6 @@ class ProductList extends React.Component {
                     
                     {this.state.categorys.length > 0 ?  <section id="product-list-section-body">
                         {this.state.products.map((data,index) => this.state.categorys.filter((val) => val.id === data.productVariant.mainCategory.id)[0].checked ? <NewProductCard onClick={(data) => {this.props.navigate('/product/details',{state: {data : data}})}} key={index} data={data}/> : <></>)}
-                        {this.state.products.map((data,index) => this.state.categorys.filter((val) => val.id === data.productVariant.mainCategory.id)[0].checked ? <NewProductCard onClick={(data) => {this.props.navigate('/product/details',{state: {data : data}})}} key={index} data={data}/> : <></>)}
                     </section> : <></>}
                    
                     

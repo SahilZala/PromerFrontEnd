@@ -2,7 +2,7 @@ import React from "react";
 import './home_view.css';
 import Navbar from "../../Components/Navbar/navbar";
 import CustomeCarousel from "../../Components/Carousel/custome_carousel";
-import OurStory from "../../Components/OurStory/our-story";
+// import OurStory from "../../Components/OurStory/our-story";
 import DescriptionLabel from "../../Components/DescriptionLabel/description-label";
 import gsap from "gsap/gsap-core";
 import { Expo } from "gsap";
@@ -12,6 +12,8 @@ import { CSSPlugin } from "gsap/CSSPlugin";
 import Footer from "../../Components/Footer/footer";
 import {useNavigate} from 'react-router-dom';
 import Banner from "../../Components/Banner/banner";
+import Gallery from "../../Components/Gallery/gallery";
+import CoreDetails from "../../Components/CoreDetails/core-details";
 
 // import Gallery from "../../Components/Gallery/gallery";
 // import Footer from "../../Components/Footer/footer";
@@ -37,9 +39,9 @@ class HomeViewMain extends React.Component
                 </section>
                 <br/>
                 <br/>
-                <section id="ourstory-section">
+                {/* <section id="ourstory-section">
                     <OurStory/>
-                </section>
+                </section> */}
                 <br/>
                 <br/>
 
@@ -64,18 +66,25 @@ class HomeViewMain extends React.Component
                 <br/>
                 
               
-                {/* <section id="core-details-section">
-                    <CoreDetails/>
-                </section>   */}
+                <section id="core-details-section">
+                    <CoreDetails url = "https://images.pexels.com/photos/4495756/pexels-photo-4495756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" head = "#GET SET GO" details={<p>Why conform to the ordinary when you can stand out brilliantly with Promer? Celebrate your uniqueness, and we'll join the party! Our vibrant and imaginative designs aren't just fashion statements—they're an embodiment of your distinct personality.
+{<br/>}{<br/>}Promer is more than just socks; it's a canvas for your self-expression, sparking conversations and leaving an indelible mark wherever you go.</p>}/>
+                </section>  
                 <br/>
                 <br/>
 
               
-                {/* <section id="gallery-component-section">
+                <section id="gallery-component-section">
                     <Gallery/>
                 </section>
                 <br/>
-                <br/> */}
+                <br/>
+                
+                <section id="core-details-section">
+                    <CoreDetails url = "https://firebasestorage.googleapis.com/v0/b/miraclesstyle-1d805.appspot.com/o/Product%2F1715502502652%2F1715502503986.png?alt=media&token=5c8fa947-bd98-475b-8c7f-840b5028ade4" head = "#CUSHIONED BOTTOM" details={<p>Featuring a cushioned layer at the bottom, the Promer Men's Striped Ankle-length Socks Set can provide exceptional comfort and absorb impact on the feet during various activities such as running and walking. Also, this cushioning ensures that your feet stay comfortable and protected, even during long hours of wear. Whether you're going for a casual stroll or engaging in intense physical activities like sports or gym sessions, these socks offer the ideal balance of support and comfort. Furthermore, the broad stripes and colours are the highlight of these socks."</p>} />
+                </section>  
+                <br/>
+                <br/>
 
                 <section id="footer-section"> 
                     <Footer/>
