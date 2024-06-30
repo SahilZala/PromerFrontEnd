@@ -1,22 +1,22 @@
-#body{
+#body {
     margin-left: 15px;
     margin-right: 15px;
 }
 
 
-.nav-bar{
+.nav-bar {
     margin: 0px;
     padding-bottom: 15px;
     padding-top: 15px;
     border-bottom: 1.3px rgb(70, 70, 70) solid;
-    
+
 }
 
-.nav-bar h1{
+.nav-bar h1 {
     padding: 0px;
     margin: 0px;
-    font-family: "Roboto", sans-serif; 
-    background: linear-gradient(90deg, rgba(92,58,180,1) 0%, rgba(253,29,29,1) 10%, rgba(252,130,69,1) 20%);
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(90deg, rgba(92, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 10%, rgba(252, 130, 69, 1) 20%);
     font-size: 1.8vmax;
     font-weight: 700;
     -webkit-background-clip: text;
@@ -25,19 +25,19 @@
 }
 
 
-.title-body{
- /* background-image: url("https://img.freepik.com/free-vector/flat-pattern-design-autumn-season-celebration_23-2150739795.jpg?w=740&t=st=1719300075~exp=1719300675~hmac=4ef6c479baac39b4db987402d9661286c57d89372b4b374849053c8e019cf0d3"); */
-   padding: 10vmax;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   background-attachment: fixed;
-   background-size: contain;
-   
+.title-body {
+    /* background-image: url("https://img.freepik.com/free-vector/flat-pattern-design-autumn-season-celebration_23-2150739795.jpg?w=740&t=st=1719300075~exp=1719300675~hmac=4ef6c479baac39b4db987402d9661286c57d89372b4b374849053c8e019cf0d3"); */
+    padding: 10vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-attachment: fixed;
+    background-size: contain;
+
 }
 
-.title-body p{
+.title-body p {
     padding: 0px;
     margin: 0px;
     font-size: 2.5vmax;
@@ -45,12 +45,12 @@
     font-family: "Playwrite MX", cursive;
 }
 
-.title-body button{
+.title-body button {
     border: 2px beige solid;
     padding: 10px;
     margin: 15px;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(90deg, rgba(92,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,130,69,1) 100%);
+    background: linear-gradient(90deg, rgba(92, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 130, 69, 1) 100%);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     color: aliceblue;
     border-radius: 5px;
@@ -60,14 +60,14 @@
 }
 
 
-.title-body button:hover{
+.title-body button:hover {
     border: 2px black solid;
     background: transparent;
     color: black;
     font-family: 'Roboto' sans-serif;
 }
 
-.marquee1{
+.marquee1 {
     height: 7vw;
     overflow-x: auto;
     width: 100%;
@@ -75,7 +75,7 @@
     overflow-y: hidden;
 }
 
-.marquee1 h2{
+.marquee1 h2 {
     padding: 0px;
     margin: 0px;
     margin-right: 6vw;
@@ -87,11 +87,11 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     word-spacing: 6vw;
-    
-    
+
+
 }
 
-.marquee1::-webkit-scrollbar{
+.marquee1::-webkit-scrollbar {
     display: none;
 }
 
@@ -99,22 +99,23 @@
     height: 3vw;
     width: 3vw;
     margin: .5vw;
-    background: linear-gradient(90deg, rgba(92,58,180,1) 0%, rgba(253,29,29,1) 70%, rgba(252,130,69,1) 100%);;
+    background: linear-gradient(90deg, rgba(92, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 70%, rgba(252, 130, 69, 1) 100%);
+    ;
     border-radius: 50%;
     display: inline-block;
     justify-content: center;
     align-items: center;
 }
 
-.title-label-box .label-box{
+.title-label-box .label-box {
     position: relative;
-    
+
     display: flex;
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
     border-bottom: 2px grey solid;
-    
+
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
     transition: .5s ease-in-out;
@@ -123,7 +124,7 @@
 
 }
 
-.title-label-box .label-box h1{
+.title-label-box .label-box h1 {
     z-index: 552;
     margin-left: 2vw;
     margin-right: 2vw;
@@ -131,45 +132,47 @@
     transition: all ease 1.5s;
 }
 
-.title-label-box .label-box .shutter1{
+.title-label-box .label-box .shutter1 {
     position: absolute;
     width: 100%;
     height: 50%;
     top: -50%;
     transition: all ease 0.5s;
-    background: linear-gradient(90deg, rgba(92,58,180,1) 0%, rgba(253,29,29,1) 70%, rgba(252,130,69,1) 100%);;
-    
+    background: linear-gradient(90deg, rgba(92, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 70%, rgba(252, 130, 69, 1) 100%);
+    ;
+
 }
 
-.title-label-box .label-box .shutter2{
+.title-label-box .label-box .shutter2 {
     position: absolute;
     width: 100%;
     height: 50%;
     bottom: -50%;
     transition: all ease 0.5s;
-    background: linear-gradient(90deg, rgba(92,58,180,1) 0%, rgba(253,29,29,1) 70%, rgba(252,130,69,1) 100%);;
-    
+    background: linear-gradient(90deg, rgba(92, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 70%, rgba(252, 130, 69, 1) 100%);
+    ;
+
 }
 
-.title-label-box .label-box:hover .shutter1{
+.title-label-box .label-box:hover .shutter1 {
     top: 0%;
 }
 
-.title-label-box .label-box:hover .shutter2{
+.title-label-box .label-box:hover .shutter2 {
     bottom: 0%;
 }
 
 
-.title-label-box .label-box:hover h1{
+.title-label-box .label-box:hover h1 {
     color: white;
 }
 
 
-.title-label-box{
+.title-label-box {
     position: relative;
 }
 
-.title-label-box .hover-image{
+.title-label-box .hover-image {
     position: absolute;
     height: 220px;
     width: 220px;
@@ -179,30 +182,30 @@
     left: 50%;
     opacity: 0;
     transition: all ease 0.5s;
-    
+
     border-radius: 5px;
 }
 
-.title-label-box .hover-image img{
+.title-label-box .hover-image img {
     min-height: 220px;
     width: 220px;
     height: 220px;
     border-radius: 5px;
     background-size: cover;
-    
+
 }
 
-.title-label-box:hover .hover-image{
+.title-label-box:hover .hover-image {
     opacity: 1;
 }
 
-.best-products{
+.best-products {
     white-space: nowrap;
     overflow-x: auto;
     display: flex;
 }
 
-.best-products .product-container{
+.best-products .product-container {
     min-height: 240px;
     min-width: 200px;
     width: 15vmax;
@@ -219,19 +222,19 @@
 
 
 
-.best-products::-webkit-scrollbar{
+.best-products::-webkit-scrollbar {
     display: none;
 }
 
 
-.best-products .product-container img{
+.best-products .product-container img {
     width: 100%;
     height: 80%;
     height: auto;
     border-radius: 5px 5px 0px 0px;
 }
 
-.best-products .product-container p{
+.best-products .product-container p {
     margin: 5px;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -242,11 +245,12 @@
 }
 
 
-.best-products .product-container .view-details-button-container{
+.best-products .product-container .view-details-button-container {
     position: absolute;
     height: 20%;
     width: 100%;
-    background: linear-gradient(90deg, rgba(92,58,180,1) 0%, rgba(253,29,29,1) 70%, rgba(252,130,69,1) 100%);;
+    background: linear-gradient(90deg, rgba(92, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 70%, rgba(252, 130, 69, 1) 100%);
+    ;
     bottom: -20%;
     transition: all ease 0.5s;
     cursor: pointer;
@@ -259,21 +263,21 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.best-products .product-container:hover .view-details-button-container{
+.best-products .product-container:hover .view-details-button-container {
     bottom: 0%;
 }
 
-.best-products .product-container:hover .view-details-button-container p{
+.best-products .product-container:hover .view-details-button-container p {
     font-size: 20px;
 }
 
-.bamboo-socks-branding{
+.bamboo-socks-branding {
     position: relative;
     display: flex;
     justify-content: center;
 }
 
-.bamboo-socks-branding img{ 
+.bamboo-socks-branding img {
     z-index: 500;
     height: 400px;
     width: 350px;
@@ -281,8 +285,8 @@
     border-radius: 5px;
 }
 
-.bamboo-socks-branding #t1{
-    
+.bamboo-socks-branding #t1 {
+
     top: 0%;
     position: absolute;
     height: 125px;
@@ -290,10 +294,10 @@
     width: 100%;
     white-space: nowrap;
     overflow-y: hidden;
-    
-} 
 
-.bamboo-socks-branding #t1 h1{
+}
+
+.bamboo-socks-branding #t1 h1 {
     height: 110px;
     padding: 0px;
     margin: 0px;
@@ -307,12 +311,12 @@
     animation-iteration-count: infinite;
 }
 
-.bamboo-socks-branding #t1::-webkit-scrollbar{
+.bamboo-socks-branding #t1::-webkit-scrollbar {
     display: block;
 
 }
 
-.bamboo-socks-branding #t2{
+.bamboo-socks-branding #t2 {
     z-index: 501;
     top: 30%;
     position: absolute;
@@ -321,11 +325,11 @@
     width: 100%;
     white-space: nowrap;
     overflow-y: hidden;
-    
-    
-} 
 
-.bamboo-socks-branding #t2 h1{
+
+}
+
+.bamboo-socks-branding #t2 h1 {
     height: 110px;
     padding: 0px;
     margin: 0px;
@@ -342,14 +346,14 @@
     -webkit-text-stroke-color: black;
 }
 
-.bamboo-socks-branding #t2::-webkit-scrollbar{
+.bamboo-socks-branding #t2::-webkit-scrollbar {
     display: block;
 
 }
 
 
 
-.bamboo-socks-branding #t3{
+.bamboo-socks-branding #t3 {
     top: 60%;
     position: absolute;
     height: 125px;
@@ -357,10 +361,10 @@
     width: 100%;
     white-space: nowrap;
     overflow-y: hidden;
-    
-} 
 
-.bamboo-socks-branding #t3 h1{
+}
+
+.bamboo-socks-branding #t3 h1 {
     height: 110px;
     padding: 0px;
     margin: 0px;
@@ -374,18 +378,18 @@
     animation-iteration-count: infinite;
 }
 
-.bamboo-socks-branding #t3::-webkit-scrollbar{
+.bamboo-socks-branding #t3::-webkit-scrollbar {
     display: block;
 
 }
 
 
 @keyframes reverse-mqrquee-anim {
-    0%{
+    0% {
         transform: translateX(calc(-100% - 6vw));
     }
 
-    100%{
+    100% {
         transform: translateX(0%);
     }
 }
@@ -394,110 +398,193 @@
 
 
 @media (max-width: 600px) {
-.bamboo-socks-branding img{ 
+    .bamboo-socks-branding img {
         z-index: 500;
         height: 200px;
         width: 150px;
         background-color: aqua;
         border-radius: 3px;
-}    
+    }
 
-    
-.bamboo-socks-branding #t1{  
-    top: 0%;
-    position: absolute;
-    height: 125px;
-    overflow-x: auto;
-    width: 100%;
-    white-space: nowrap;
-    overflow-y: hidden;
-    
-} 
-.bamboo-socks-branding #t1 h1{
+
+    .bamboo-socks-branding #t1 {
+        top: 0%;
+        position: absolute;
+        height: 125px;
+        overflow-x: auto;
+        width: 100%;
+        white-space: nowrap;
+        overflow-y: hidden;
+
+    }
+
+    .bamboo-socks-branding #t1 h1 {
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+        margin-right: 2vw;
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 70px;
+        animation-name: marquee1-anim;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    .bamboo-socks-branding #t2 {
+        z-index: 501;
+        top: 30%;
+        position: absolute;
+        height: 125px;
+        overflow-x: auto;
+        width: 100%;
+        white-space: nowrap;
+        overflow-y: hidden;
+    }
+
+    .bamboo-socks-branding #t2 h1 {
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+        margin-right: 2vw;
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 70px;
+        animation-name: reverse-mqrquee-anim;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;
+    }
+
+    .bamboo-socks-branding #t3 {
+        top: 60%;
+        position: absolute;
+        height: 125px;
+        overflow-x: auto;
+        width: 100%;
+        white-space: nowrap;
+        overflow-y: hidden;
+
+    }
+
+    .bamboo-socks-branding #t3 h1 {
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+        margin-right: 2vw;
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 70px;
+        animation-name: marquee1-anim;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+}
+
+
+.info-section{
+    padding: 1vw;
+    background-color: #343a40;
+    color: #f8f9fa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2vmax;
+    border-radius: .5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.info-section img{
+    width: 45vw;
+    height: 25vw;
+    margin: .5vw;
+    border-radius: .5vw;
+}
+
+
+.info-section .details{
+    width: 45vw;
     height: auto;
+    margin: .5vw;
+}
+
+.info-section .details p{
     padding: 0px;
     margin: 0px;
-    margin-right: 2vw;
-    display: inline-block;
-    font-family: 'Roboto', sans-serif;
-    font-size: 70px;
-    animation-name: marquee1-anim;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    word-spacing: .2vw;
 }
 
-.bamboo-socks-branding #t2{
-    z-index: 501;
-    top: 30%;
-    position: absolute;
-    height: 125px;
-    overflow-x: auto;
-    width: 100%;
-    white-space: nowrap;
-    overflow-y: hidden;  
-} 
-
-.bamboo-socks-branding #t2 h1{
-    height: auto;
+.info-section .details h1{
     padding: 0px;
     margin: 0px;
-    margin-right: 2vw;
-    display: inline-block;
-    font-family: 'Roboto', sans-serif;
-    font-size: 70px;
-    animation-name: reverse-mqrquee-anim;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
+    margin-bottom: .5vw;
+    font-size: 2vw;
+    background: linear-gradient(90deg, rgba(92,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,130,69,1) 100%);
+    font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
-
-
-
-
-
-
-.bamboo-socks-branding #t3{
-    top: 60%;
-    position: absolute;
-    height: 125px;
-    overflow-x: auto;
-    width: 100%;
-    white-space: nowrap;
-    overflow-y: hidden;
-    
-} 
-
-.bamboo-socks-branding #t3 h1{
-    height: auto;
-    padding: 0px;
-    margin: 0px;
-    margin-right: 2vw;
-    display: inline-block;
-    font-family: 'Roboto', sans-serif;
-    font-size: 70px;
-    animation-name: marquee1-anim;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-
-
-}
-
 
 @keyframes marquee1-anim {
-    0%{
+    0% {
         transform: translateX(0);
     }
 
-    100%{
+    100% {
         transform: translateX(calc(-100% - 6vw));
     }
+}
+
+@media (max-width: 600px) {
+    .info-section{
+        padding: 1vw;
+        background-color: #343a40;
+        color: #f8f9fa;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2vmax;
+        border-radius: .5vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    
+    .info-section img{
+        width: 98%;
+        height: auto;
+        margin: .5vw;
+        border-radius: .5vw;
+    }
+    
+    
+    .info-section .details{
+        width: 98%;
+        height: auto;
+        margin: .5vw;
+    }
+    
+    .info-section .details p{
+        padding: 0px;
+        margin: 0px;
+        word-spacing: .2vw;
+    }
+    
+    .info-section .details h1{
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 1vw;
+        font-size: 6vw;
+        background: linear-gradient(90deg, rgba(92,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,130,69,1) 100%);
+        font-weight: 700;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+       
     
 }

@@ -16,11 +16,16 @@
 }
 
 .nav-item h3:hover{
-    color: #b69121;
+    /* color: #b69121; */
+    font-family: "Roboto", sans-serif; 
+    background: linear-gradient(90deg, rgba(92,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,130,69,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
 .nav-item h3 .submenu{
+    -webkit-text-fill-color: #333533;
     list-style: none;
     position: absolute;
     background-color: aliceblue;
@@ -54,11 +59,11 @@
 }
 
 .nav-item:hover .submenu li:hover {
-    background-color: var(--brand-color);
+    background: linear-gradient(90deg, rgba(92,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,130,69,1) 100%);
     color: white;
 }
 
 .nav-item:hover .submenu li:hover h5{
-    background-color: var(--brand-color);
+    background: linear-gradient(90deg, rgba(92,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,130,69,1) 100%);
     color: white;
 }

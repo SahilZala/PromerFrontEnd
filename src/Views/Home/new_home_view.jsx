@@ -5,6 +5,8 @@ import { Expo } from "gsap";
 import { CSSPlugin } from "gsap/CSSPlugin";
 import Navbar from "../../Components/Navbar/navbar";
 import gsap from "gsap/gsap-core";
+import DescriptionLabel from "../../Components/DescriptionLabel/description-label";
+import Footer from "../../Components/Footer/footer";
 
 class NewHomeViewMain extends React.Component{
 
@@ -64,76 +66,87 @@ class NewHomeViewMain extends React.Component{
                 <div className="shutter2"></div>
                 <h1>ABOUT US</h1>
             </div>
-
-            
-            {/* <div className="hover-image">
-                <image id="hover-image" src="" alt="s" />
-            </div> */}
         </div>
         <br/>
         <br/>
+
+        <section className="info-section" >
+            <img src="https://images.pexels.com/photos/1287513/pexels-photo-1287513.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" /> 
+            
+            <div className="details">
+                <h1>
+                    #PROMER SOCKS
+                </h1>
+                    <p>
+                    Promer offers premium socks designed for comfort and style. Our bamboo socks are crafted from eco-friendly bamboo fibers, known for their exceptional softness, breathability, and moisture-wicking properties. These socks provide natural odor resistance and thermal regulation, keeping your feet fresh and comfortable in any season. Whether you're looking for everyday wear or athletic performance, Promer bamboo socks combine sustainability with unmatched quality and durability.
+                    </p>
+                </div>
+        </section>
       
-        <div class="best-products">
-            <div class="product-container">
+        <br/>
+        <br/>
+
+        <div className="best-products">
+            <div className="product-container">
                 <img src="https://firebasestorage.googleapis.com/v0/b/miraclesstyle-1d805.appspot.com/o/Product%2F1707112815419%2F1707112816554.png?alt=media&token=cdaaf0ad-050b-4e83-bb42-95e552d9b1ac" alt="" />
                 <p>Product Name dsds sd sd sd </p>
-                <div class="view-details-button-container">
+                <div className="view-details-button-container">
                     <p>view details</p>
                 </div>
             </div>
             
-            <div class="product-container">
+            <div className="product-container">
                 <img src="https://firebasestorage.googleapis.com/v0/b/miraclesstyle-1d805.appspot.com/o/Product%2F1707112815419%2F1707112816554.png?alt=media&token=cdaaf0ad-050b-4e83-bb42-95e552d9b1ac" alt="" />
                 <p>Product Name dsds sd sd sd </p>
-                <div class="view-details-button-container">
+                <div className="view-details-button-container">
                     <p>view details</p>
                 </div>
             </div>
 
-            <div class="product-container">
+            <div className="product-container">
                 <img src="https://firebasestorage.googleapis.com/v0/b/miraclesstyle-1d805.appspot.com/o/Product%2F1707112815419%2F1707112816554.png?alt=media&token=cdaaf0ad-050b-4e83-bb42-95e552d9b1ac" alt="" />
                 <p>Product Name dsds sd sd sd </p>
-                <div class="view-details-button-container">
+                <div className="view-details-button-container">
                     <p>view details</p>
                 </div>
             </div>
 
-            <div class="product-container">
+            <div className="product-container">
                 <img src="https://firebasestorage.googleapis.com/v0/b/miraclesstyle-1d805.appspot.com/o/Product%2F1707112815419%2F1707112816554.png?alt=media&token=cdaaf0ad-050b-4e83-bb42-95e552d9b1ac" alt="" />
                 <p>Product Name dsds sd sd sd </p>
-                <div class="view-details-button-container">
+                <div className="view-details-button-container">
                     <p>view details</p>
                 </div>
             </div>
 
-            <div class="product-container">
+            <div className="product-container">
                 <img src="https://firebasestorage.googleapis.com/v0/b/miraclesstyle-1d805.appspot.com/o/Product%2F1707112815419%2F1707112816554.png?alt=media&token=cdaaf0ad-050b-4e83-bb42-95e552d9b1ac" alt="" />
                 <p>Product Name dsds sd sd sd </p>
-                <div class="view-details-button-container">
+                <div className="view-details-button-container">
                     <p>view details</p>
                 </div>
             </div>
 
-            <div class="product-container">
+            <div className="product-container">
                 <img src="https://firebasestorage.googleapis.com/v0/b/miraclesstyle-1d805.appspot.com/o/Product%2F1707112815419%2F1707112816554.png?alt=media&token=cdaaf0ad-050b-4e83-bb42-95e552d9b1ac" alt="" />
                 <p>Product Name dsds sd sd sd </p>
-                <div class="view-details-button-container">
+                <div className="view-details-button-container">
                     <p>view details</p>
                 </div>
             </div>
 
-            <div class="product-container">
+            <div className="product-container">
                 <img src="https://firebasestorage.googleapis.com/v0/b/miraclesstyle-1d805.appspot.com/o/Product%2F1707112815419%2F1707112816554.png?alt=media&token=cdaaf0ad-050b-4e83-bb42-95e552d9b1ac" alt="" />
                 <p>Product Name dsds sd sd sd </p>
-                <div class="view-details-button-container">
+                <div className="view-details-button-container">
                     <p>view details</p>
                 </div>
             </div>
 
-            <div class="product-container">
+            <div className="product-container">
                 <img src="https://firebasestorage.googleapis.com/v0/b/miraclesstyle-1d805.appspot.com/o/Product%2F1707112815419%2F1707112816554.png?alt=media&token=cdaaf0ad-050b-4e83-bb42-95e552d9b1ac" alt="" />
                 <p>Product Name dsds sd sd sd </p>
-                <div class="view-details-button-container">
+                <div className="view-details-button-container">
                     <p>view details</p>
                 </div>
             </div>
@@ -143,7 +156,12 @@ class NewHomeViewMain extends React.Component{
         <br/>
         <br/>
 
-        <div class="bamboo-socks-branding">
+        <DescriptionLabel gsap={this.gsap} effect={this.effect}/>
+        
+        <br/>
+        <br/>
+
+        <div className="bamboo-socks-branding">
             <div id="t1">
                 <h1>BAMBOO SOCKS</h1>
                 <h1>BAMBOO SOCKS</h1>
@@ -174,7 +192,8 @@ class NewHomeViewMain extends React.Component{
 
         <br/>
         <br/>
-            
+        
+        <Footer />
         </section>);
     }
 }
